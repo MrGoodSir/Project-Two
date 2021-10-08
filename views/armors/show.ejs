@@ -13,12 +13,35 @@
 </form>
 
 <body>
-    <h1>This is the show armor page</h1>
+    <h1>
+        <%=armor.name %> Armor
+    </h1>
+    <img src="<%=armor.image%>" style="max-height: 400px; max-width: 400px;">
+
+    <h2>Information:</h2> <br>
+
+    <p>
+        <%=armor.description%>
+    </p>
+
+    <p>
+        <%=armor.weight%> LBS
+    </p>
+
+    <p>
+        $
+        <%=armor.price%>
+    </p>
+
+
+
+
 
 </body>
 
 <form action="/home/armor">
     <input type="submit" value="Go Back">
 </form>
+
 
 </html>

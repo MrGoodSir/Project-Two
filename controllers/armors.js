@@ -35,8 +35,13 @@ armorRouter.get('/', (req, res) => {
 
 // Show route
 
-armorRouter.get('/show', (req, res) => {
-    res.render('../views/armors/show.ejs')
+armorRouter.get('/show/:id', (req, res) => {
+    Armor.findById(req.params.id, (error, armor) => {
+        res.render('../views/armors/show.ejs', {
+            armor
+        })
+
+    })
 })
 
 

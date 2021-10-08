@@ -19,7 +19,7 @@ module.exports = [{
     {
 
         name: "Recruit",
-        description: "Standar armor for newly recruited Spartan-IV",
+        description: "Standard armor for newly recruited Spartan-IV",
         weight: 750,
         price: 550000,
         image: "https://www.vhv.rs/dpng/d/505-5059956_halo-reach-vanity-armor-hd-png-download.png"
