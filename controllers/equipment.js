@@ -3,7 +3,7 @@ const equipmentRouter = express.Router();
 
 
 equipmentRouter.get('/', (req, res) => {
-    res.send("This is the Equipment page")
+    res.render('../views/equipment/index.ejs')
 })
 
 
