@@ -8,16 +8,43 @@
     <title>Document</title>
 </head>
 
+<a href="/home/equipment/seed">Seed</a> <br>. <br> .
+
 <nav>
 
     <form action="/home">
-        <input type="submit" value="HOME">
+        <input type="submit" value="Go Back">
     </form>
 
 </nav>
 
 <body>
     <h1>This is the index equipment page</h1>
+
+    <ul>
+        <% equipments.forEach(equipment=> { %>
+            <li>
+                <%= equipment.name %> <br>
+
+
+
+                    <a href="/home/equipment/show">
+                        <img src="<%= equipment.image %>" style="max-height: 250px; max-width: 250px;">
+                    </a>
+
+
+
+            </li>
+            <% }) %>
+
+
+
+
+
+
+
+    </ul>
+
 
 </body>
 

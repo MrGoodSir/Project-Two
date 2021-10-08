@@ -3,8 +3,8 @@ module.exports = [{
         name: "Mjolnir",
         description: "Worn by Spartan-II super soldiers",
         weight: 1000,
-        price: $2000000,
-        image: "https://static.wikia.nocookie.net/halo/images/0/0f/Halo3MC.png/revision/latest?cb=20131125070217"
+        price: 2000000,
+        image: "https://static.wikia.nocookie.net/halocenter/images/9/99/Masterchief.jpg/revision/latest?cb=20100624213004"
 
     },
     {
@@ -12,7 +12,7 @@ module.exports = [{
         name: "Gungnir",
         description: "Suit of armor with a camera instead of a visor",
         weight: 800,
-        price: $1500000,
+        price: 1500000,
         image: "https://halo.wiki.gallery/images/thumb/3/3e/HTMCC_HR_Spartan_GUNGNIR.png/275px-HTMCC_HR_Spartan_GUNGNIR.png"
 
     },
@@ -38,7 +38,7 @@ module.exports = [{
 
         name: "Scout",
         description: "Spectialzed for snipers",
-        weight: 1500,
+        weight: 500,
         price: 1500000,
         image: "https://pbs.twimg.com/media/EZIxELNXkAA8s7N.jpg"
 

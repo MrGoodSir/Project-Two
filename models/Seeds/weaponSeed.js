@@ -35,7 +35,7 @@ module.exports = [{
         weight: 1,
         price: 2000,
         magazineCapacity: "NA",
-        image: "https://content.halocdn.com/media/Default/encyclopedia/weapons/Energy-Sword/update-12152015/energy-sword-square-542x542-0441b42aa4fe46a69d977d4b3e04e852.jpg"
+        image: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/halo-4/d/d8/Energyswordh4.png"
 
     },
     {
@@ -55,7 +55,7 @@ module.exports = [{
         weight: 52.3,
         price: 3000,
         magazineCapacity: 43,
-        image: "https://content.halocdn.com/media/Default/encyclopedia/weapons/spartan-laser/spartan-laser-542x542-33d248250a9d44c8ac85a28fde8247f9.jpg"
+        image: "https://halo.wiki.gallery/images/thumb/6/64/H4-SpartanLaser.png/1200px-H4-SpartanLaser.png"
 
     }
 ];

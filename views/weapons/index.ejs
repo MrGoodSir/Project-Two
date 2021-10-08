@@ -8,10 +8,12 @@
     <title>Document</title>
 </head>
 
+<a href="/home/weapons/seed">Seed</a> <br>. <br> .
+
 <nav>
 
     <form action="/home">
-        <input type="submit" value="HOME">
+        <input type="submit" value="Go Back">
     </form>
 
 </nav>
@@ -20,5 +22,29 @@
     <h1>This is the index Weapons page</h1>
 
 </body>
+
+<ul>
+    <% weapons.forEach(weapon=> { %>
+        <li>
+            <%= weapon.name %> <br>
+
+
+
+                <a href="/home/weapons/show">
+                    <img src="<%= weapon.image %>" style="max-height: 250px; max-width: 250px;">
+                </a>
+
+
+
+        </li>
+        <% }) %>
+
+
+
+
+
+
+
+</ul>
 
 </html>

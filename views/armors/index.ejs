@@ -8,17 +8,46 @@
     <title>Document</title>
 </head>
 
+<a href="/home/armor/seed">Seed</a> <br>. <br> .
+
 <nav>
 
     <form action="/home">
-        <input type="submit" value="HOME">
+        <input type="submit" value="Go Back">
     </form>
 
 </nav>
 
 <body>
-    <h1>This is the index armor page</h1>
+    <h1>Check out our armor</h1>
+
+
+    <ul>
+        <% armors.forEach(armor=> { %>
+            <li>
+                <%= armor.name %> Armor<br>
+
+
+
+                    <a href="/home/armor/show">
+                        <img src="<%= armor.image %>" style="max-height: 250px; max-width: 250px;">
+                    </a>
+
+
+
+            </li>
+            <% }) %>
+
+
+
+
+
+
+
+    </ul>
 
 </body>
+
+
 
 </html>

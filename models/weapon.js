@@ -5,7 +5,8 @@ const weaponSchema = new Schema({
     name: String,
     description: String,
     weight: Number,
-    price: Number
+    price: Number,
+    image: String
 })
 
 const Weapon = mongoose.model('Weapon', weaponSchema)
