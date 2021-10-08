@@ -12,14 +12,36 @@
     <input type="submit" value="Home">
 </form>
 
-
 <body>
-    <h1>This is the show equipment page</h1>
+    <h1>
+        <%=equipment.name %>
+    </h1>
+    <img src="<%=equipment.image%>" style="max-height: 400px; max-width: 400px;">
+
+    <h2>Information:</h2> <br>
+
+    <p>
+        <%=equipment.description%>
+    </p>
+
+    <p>
+        $
+        <%=equipment.price%>
+    </p>
+
+
+
+
 
 </body>
+
+<form action='/home/equipment/show/<%=equipment._id%>'>
+    <input type='submit' value="Buy">
+</form>
 
 <form action="/home/equipment">
     <input type="submit" value="Go Back">
 </form>
+
 
 </html>

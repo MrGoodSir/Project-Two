@@ -42,8 +42,12 @@ weaponRouter.get('/', (req, res) => {
 
 // Show route
 
-weaponRouter.get('/show', (req, res) => {
-    res.render('../views/weapons/show.ejs')
+weaponRouter.get('/show/:id', (req, res) => {
+    Weapon.findById(req.params.id, (error, weapon) => {
+        res.render('../views/weapons/show.ejs', {
+            weapon
+        })
+    })
 })
 
 

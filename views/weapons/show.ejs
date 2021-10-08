@@ -12,15 +12,36 @@
     <input type="submit" value="Home">
 </form>
 
-
 <body>
-    <h1>This is the show Weapons page</h1>
+    <h1>
+        <%=weapon.name %>
+    </h1>
+    <img src="<%=weapon.image%>" style="max-height: 400px; max-width: 400px;">
+
+    <h2>Information:</h2> <br>
+
+    <p>
+        <%=weapon.description%>
+    </p>
+
+    <p>
+        $
+        <%=weapon.price%>
+    </p>
+
+
+
 
 
 </body>
 
+<form action='/home/weapons/show/<%=weapon._id%>'>
+    <input type='submit' value="Buy">
+</form>
+
 <form action="/home/weapons">
     <input type="submit" value="Go Back">
 </form>
+
 
 </html>
