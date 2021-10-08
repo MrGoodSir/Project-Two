@@ -7,16 +7,4 @@ startRouter.get('/', (req, res) => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = startRouter

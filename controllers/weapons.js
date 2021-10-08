@@ -2,8 +2,8 @@ const express = require('express')
 const weaponRouter = express.Router();
 
 
-weaponRouter.get('/', (req, res) => {
-    res.send("This is the Weapons page")
+weaponRouter.get('/home/weapons', (req, res) => {
+    res.render('../views/weapons/index.ejs')
 })
 
 

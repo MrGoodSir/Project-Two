@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose')
 const armorRouter = require('./controllers/armors')
 const startRouter = require('./controllers/start')
+const homeRouter = require('./controllers/home')
 const weaponRouter = require('./controllers/weapons')
 const equipmentRouter = require('./controllers/equipment')
 require('dotenv').config()
@@ -19,10 +20,12 @@ const db = mongoose.connection
 db.on('connected', () => { console.log("MongoDB is Connected...") })
 db.on('error', (error) => console.log('MongoDB Error ' + error.message));
 
-app.use('/weapons', weaponRouter)
-app.use('/armor', armorRouter)
-app.use('/equipment', equipmentRouter)
+app.use('/home/weapons', weaponRouter)
+app.use('/home/armor', armorRouter)
+app.use('/home/equipment', equipmentRouter)
+app.use('/home', homeRouter)
 app.use(startRouter)
+
 
 
 
