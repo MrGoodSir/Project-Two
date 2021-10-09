@@ -7,7 +7,8 @@ const armorSchema = new Schema({
     description: { type: String, required: true },
     weight: { type: Number, required: true },
     price: { type: Number, required: true },
-    image: { type: String, required: true }
+    image: { type: String, required: false },
+    quanity: { type: Number, required: true }
 
 }, { timestamps: true });
 

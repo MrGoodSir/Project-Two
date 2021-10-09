@@ -29,6 +29,22 @@ armorRouter.get('/', (req, res) => {
 
 // Update route
 
+
+// Buy Button Route
+armorRouter.put('/:id/buy', (req, res) => {
+    Armor.findByIdAndUpdate(
+        req.params.id, { $inc: { quanity: -1 } }, {
+            new: true,
+        },
+        (error, updatedArmors) => {
+            res.redirect(`/armors/${req.params.id}`)
+        })
+})
+
+
+
+
+
 // Create Route
 
 // Edit Route
