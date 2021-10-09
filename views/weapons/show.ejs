@@ -33,23 +33,36 @@
         <%=weapon.price%>
     </p>
 
-    <p>
-        Quanity :
-        <%=weapon.quanity%>
-    </p>
 
 
 
 
 </body>
 
-<form action='/home/weapons/show/<%=weapon._id%>'>
-    <input type='submit' value="Buy">
-</form>
+<% if(weapon.quanity >=1) { %>
 
-<form action="/home/weapons">
-    <input type="submit" value="Go Back">
-</form>
+    <p>
+        Quanity :
+        <%=weapon.quanity%>
+    </p>
+
+    <form action='/home/weapons/show/<%=weapon._id%>'>
+        <input type='submit' value="Buy">
+    </form>
+
+    <% } else { %>
+        <h3 style="color: red;">OUT OF STOCK</h3>
+        <% } %>
+
+
+
+
+
+
+
+            <form action="/home/weapons">
+                <input type="submit" value="Go Back">
+            </form>
 
 
 </html>

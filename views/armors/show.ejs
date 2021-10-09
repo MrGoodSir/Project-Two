@@ -50,9 +50,11 @@
     <form action='/home/armor/show/<%=armor._id%>/buy?_method=PUT' method='POST'>
         <input class="armorShowBuyButton" type='submit' value="Buy">
     </form>
+
     <% } else { %>
         <h3 style="color: red">OUT OF STOCK</h3>
         <% } %>
+
 
             <form action="/home/armor">
                 <input type="submit" value="Go Back">

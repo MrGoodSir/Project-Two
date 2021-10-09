@@ -30,7 +30,7 @@ module.exports = [{
         description: "Turns you invisible",
         price: 1000,
         image: "https://qph.fs.quoracdn.net/main-qimg-22db085504273757c4db58b5491992ed-c",
-        quanity: 3
+        quanity: 0
 
     },
     {
