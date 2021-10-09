@@ -4,7 +4,7 @@ module.exports = [{
         description: "Worn by Spartan-II super soldiers",
         weight: 1000,
         price: 2000000,
-        image: "https://static.wikia.nocookie.net/halocenter/images/9/99/Masterchief.jpg/revision/latest?cb=20100624213004"
+        image: "https://upload.wikimedia.org/wikipedia/en/0/05/Master_Chief_in_Halo_5.png"
 
     },
     {
