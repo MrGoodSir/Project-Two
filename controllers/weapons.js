@@ -32,6 +32,10 @@ weaponRouter.get('/', (req, res) => {
 
 // New Route
 
+weaponRouter.get('/new', (req, res) => {
+    res.render('../views/weapons/new.ejs')
+})
+
 // Delete Route
 
 // Update route

@@ -28,6 +28,10 @@ equipmentRouter.get('/', (req, res) => {
 
 // New Route
 
+equipmentRouter.get('/new', (req, res) => {
+    res.render('../views/equipment/new.ejs')
+})
+
 // Delete Route
 
 // Update route

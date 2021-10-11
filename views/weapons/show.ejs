@@ -39,30 +39,27 @@
 
 </body>
 
-<% if(weapon.quanity >=1) { %>
+<% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
 
-    <p>
-        Quanity :
-        <%=weapon.quanity%>
-    </p>
+    <% if(weapon.quanity >=1) { %>
 
-    <form action='/home/weapons/show/<%=weapon._id%>'>
-        <input type='submit' value="Buy">
-    </form>
+        <p>
+            Quanity :
+            <%=weapon.quanity%>
+        </p>
 
-    <% } else { %>
-        <h3 style="color: red;">OUT OF STOCK</h3>
-        <% } %>
+        <form action='/home/weapons/show/<%=weapon._id%>'>
+            <input type='submit' value="Buy">
+        </form>
 
-
-
-
+        <% } else { %>
+            <h3 style="color: red;">OUT OF STOCK</h3>
+            <% } %>
 
 
-
-            <form action="/home/weapons">
-                <input type="submit" value="Go Back">
-            </form>
+                <form action="/home/weapons">
+                    <input type="submit" value="Back">
+                </form>
 
 
 </html>
