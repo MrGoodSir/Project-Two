@@ -58,10 +58,20 @@ weaponRouter.put('/:id', (req, res) => {
     )
 })
 
+weaponRouter.put('/:id/buy', (req, res) => {
+    Weapon.findByIdAndUpdate(
+        req.params.id, { $inc: { quanity: -1 } }, {
+            new: true,
+        },
+        (error, updatedWeapons) => {
+            res.redirect(`/home/weapons/${req.params.id}`)
+        })
+})
+
 // Create Route
 
 weaponRouter.post('/', (req, res) => {
-    Weapon.create(req.body, (error, armor) => {
+    Weapon.create(req.body, (error, weapon) => {
         res.redirect('/home/weapons')
     })
 })

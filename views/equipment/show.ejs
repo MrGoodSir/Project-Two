@@ -44,7 +44,7 @@
         <%=equipment.quanity%>
     </p>
 
-    <form action='/home/equipment/<%=equipment._id%>'>
+    <form action='/home/equipment/<%=equipment._id%>/buy?_method=PUT' method='POST'>
         <input type='submit' value="Buy">
     </form>
 

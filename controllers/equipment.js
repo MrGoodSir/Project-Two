@@ -53,6 +53,17 @@ equipmentRouter.put('/:id', (req, res) => {
     )
 })
 
+// Buy Button Route
+equipmentRouter.put('/:id/buy', (req, res) => {
+    Equipment.findByIdAndUpdate(
+        req.params.id, { $inc: { quanity: -1 } }, {
+            new: true,
+        },
+        (error, updatedEquipments) => {
+            res.redirect(`/home/equipment/${req.params.id}`)
+        })
+})
+
 
 // Create Route
 
