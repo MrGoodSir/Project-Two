@@ -34,6 +34,12 @@ equipmentRouter.get('/new', (req, res) => {
 
 // Delete Route
 
+equipmentRouter.delete('/:id', (req, res) => {
+    Equipment.findByIdAndRemove(req.params.id, (err) => {
+        res.redirect('/home/equipment')
+    })
+})
+
 // Update route
 
 // Create Route

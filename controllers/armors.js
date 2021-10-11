@@ -33,6 +33,12 @@ armorRouter.get('/new', (req, res) => {
 
 // Delete Route
 
+armorRouter.delete('/:id', (req, res) => {
+    Armor.findByIdAndRemove(req.params.id, (err) => {
+        res.redirect('/home/armor')
+    })
+})
+
 // Update route
 
 

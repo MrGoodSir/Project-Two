@@ -39,7 +39,6 @@ weaponRouter.get('/new', (req, res) => {
 // Delete Route
 
 weaponRouter.delete('/:id', (req, res) => {
-    console.log("Hit")
     Weapon.findByIdAndRemove(req.params.id, (err) => {
         res.redirect('/home/weapons')
     })
