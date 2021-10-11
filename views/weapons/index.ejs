@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weapons</title>
 </head>
 
 
@@ -16,12 +16,13 @@
         <input type="submit" value="Refresh the product">
     </form>
 
-    <form action="/home">
-        <input type="submit" value="Back">
-    </form>
 
     <form action="/home/weapons/new">
-        <input type="submit" value="New">
+        <input type="submit" value="Create New Weapon">
+    </form>
+
+    <form action="/home">
+        <input type="submit" value="Back">
     </form>
 
 </nav>
@@ -34,17 +35,22 @@
 <ul>
     <% weapons.forEach(weapon=> { %>
         <li>
-            <%= weapon.name %> <br>
 
 
 
-                <a href="/home/weapons/<%=weapon._id%>">
+
+            <a href="/home/weapons/<%=weapon._id%>" style="text-decoration: none; color: black">
+                <%= weapon.name %> <br>
                     <img src="<%= weapon.image %>" style="max-height: 250px; max-width: 250px;">
-                </a>
+            </a>
 
-                <form action="/home/weapons/<%= weapon.id %>?_method=DELETE" method="POST">
-                    <input type="submit" value="DELETE" />
-                </form>
+            <form action="/home/weapons/<%= weapon.id %>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE" />
+            </form>
+
+            <form action="/home/weapons/<%=weapon.id%>/edit">
+                <input type="submit" value="EDIT">
+            </form>
 
 
 

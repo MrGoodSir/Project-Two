@@ -46,9 +46,35 @@ weaponRouter.delete('/:id', (req, res) => {
 
 // Update route
 
+weaponRouter.put('/:id', (req, res) => {
+    Weapon.findByIdAndUpdate(
+        req.params.id,
+        req.body, {
+            new: true,
+        },
+        (err, updatedweapon) => {
+            res.redirect(`/home/weapons/${req.params.id}`)
+        }
+    )
+})
+
 // Create Route
 
+weaponRouter.post('/', (req, res) => {
+    Weapon.create(req.body, (error, armor) => {
+        res.redirect('/home/weapons')
+    })
+})
+
 // Edit Route
+
+weaponRouter.get('/:id/edit', (req, res) => {
+    Weapon.findById(req.params.id, (error, foundWeapon) => {
+        res.render('../views/weapons/edit.ejs', {
+            weapon: foundWeapon
+        })
+    })
+})
 
 // Show route
 

@@ -41,10 +41,36 @@ equipmentRouter.delete('/:id', (req, res) => {
 })
 
 // Update route
+equipmentRouter.put('/:id', (req, res) => {
+    Equipment.findByIdAndUpdate(
+        req.params.id,
+        req.body, {
+            new: true,
+        },
+        (err, updatedEquipment) => {
+            res.redirect(`/home/equipment/${req.params.id}`)
+        }
+    )
+})
+
 
 // Create Route
 
+equipmentRouter.post('/', (req, res) => {
+    Equipment.create(req.body, (error, equipment) => {
+        res.redirect('/home/equipment')
+    })
+})
+
 // Edit Route
+
+equipmentRouter.get('/:id/edit', (req, res) => {
+    Equipment.findById(req.params.id, (err, foundEquipment) => {
+        res.render('../views/equipment/edit.ejs', {
+            equipment: foundEquipment
+        })
+    })
+})
 
 // Show route
 

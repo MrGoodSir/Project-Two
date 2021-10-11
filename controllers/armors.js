@@ -41,6 +41,17 @@ armorRouter.delete('/:id', (req, res) => {
 
 // Update route
 
+armorRouter.put('/:id', (req, res) => {
+    Armor.findByIdAndUpdate(
+        req.params.id,
+        req.body, {
+            new: true,
+        },
+        (err, updatedArmor) => {
+            res.redirect(`/home/armor/${req.params.id}`)
+        }
+    )
+})
 
 // Buy Button Route
 // armorRouter.put('/:id/buy', (req, res) => {
@@ -66,6 +77,14 @@ armorRouter.post('/', (req, res) => {
 })
 
 // Edit Route
+
+armorRouter.get('/:id/edit', (req, res) => {
+    Armor.findById(req.params.id, (error, foundArmor) => {
+        res.render('../views/armors/edit.ejs', {
+            armor: foundArmor
+        })
+    })
+})
 
 // Show route
 

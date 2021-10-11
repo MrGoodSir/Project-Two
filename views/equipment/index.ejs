@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Equipment</title>
 </head>
 
 
@@ -15,12 +15,13 @@
         <input type="submit" value="Refresh the product">
     </form>
 
-    <form action="/home">
-        <input type="submit" value="Back">
-    </form>
 
     <form action="/home/equipment/new">
-        <input type="submit" value="Create New">
+        <input type="submit" value="Create New Equipment">
+    </form>
+
+    <form action="/home">
+        <input type="submit" value="Back">
     </form>
 
 </nav>
@@ -31,17 +32,22 @@
     <ul>
         <% equipments.forEach(equipment=> { %>
             <li>
-                <%= equipment.name %> <br>
 
 
 
-                    <a href="/home/equipment/<%=equipment._id%>">
+
+                <a href="/home/equipment/<%=equipment._id%>" style="text-decoration: none; color: black;">
+                    <%= equipment.name %> <br>
                         <img src="<%= equipment.image %>" style="max-height: 250px; max-width: 250px;">
-                    </a>
+                </a>
 
-                    <form action="/home/equipment/<%= equipment.id %>?_method=DELETE" method="POST">
-                        <input type="submit" value="DELETE">
-                    </form>
+                <form action="/home/equipment/<%= equipment.id %>?_method=DELETE" method="POST">
+                    <input type="submit" value="DELETE">
+                </form>
+
+                <form action="/home/equipment/<%=equipment.id%>/edit">
+                    <input type="submit" value="EDIT">
+                </form>
 
 
 

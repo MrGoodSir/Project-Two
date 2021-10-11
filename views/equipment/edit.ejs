@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is the Equipment Edit Page</h1>
+
+    <form action="/home/equipment/<%=equipment._id%>?_method=PUT" method="POST">
+
+        <div>
+            Name: <input type="text" name="name" value="<%=equipment.name%>"><br>
+        </div>
+
+        <div>
+            Image: <input type="text" name="image" value="<%=equipment.image%>"><br>
+        </div>
+
+        <div>
+            Description: <input type="text" name="description" value="<%=equipment.description%>"><br>
+        </div>
+
+        <div>
+            Weight: <input type="text" name="weight" value="<%=equipment.weight%>"><br>
+        </div>
+
+        <div>
+            Price: <input type="text" name="price" value="<%=equipment.price%>"><br>
+        </div>
+
+        <div>
+            Quanity: <input type="text" name="quanity" value="<%=equipment.quanity%>">
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Changes">
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
