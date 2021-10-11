@@ -3,6 +3,8 @@ const armorRouter = express.Router();
 const armorSeed = require('../models/Seeds/armorSeed')
 const Armor = require('../models/armor')
 
+
+
 // Seed Route
 
 armorRouter.get('/seed', (req, res) => {
@@ -51,11 +53,17 @@ armorRouter.get('/new', (req, res) => {
 
 // Create Route
 
+armorRouter.post('/', (req, res) => {
+    Armor.create(req.body, (error, armor) => {
+        res.redirect('/home/armor')
+    })
+})
+
 // Edit Route
 
 // Show route
 
-armorRouter.get('/show/:id', (req, res) => {
+armorRouter.get('/:id', (req, res) => {
     Armor.findById(req.params.id, (error, armor) => {
         res.render('../views/armors/show.ejs', {
             armor

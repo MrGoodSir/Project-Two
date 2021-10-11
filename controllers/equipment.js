@@ -42,7 +42,7 @@ equipmentRouter.get('/new', (req, res) => {
 
 // Show route
 
-equipmentRouter.get('/show/:id', (req, res) => {
+equipmentRouter.get('/:id', (req, res) => {
     Equipment.findById(req.params.id, (error, equipment) => {
         res.render('../views/equipment/show.ejs', {
             equipment

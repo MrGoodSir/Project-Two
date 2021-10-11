@@ -9,6 +9,7 @@ const equipmentRouter = require('./controllers/equipment')
 const armorSeed = require('./models/Seeds/armorSeed')
 const equipmentSeed = require('./models/Seeds/equipmentSeed')
 const weaponSeed = require('./models/Seeds/weaponSeed')
+const methodOverride = require("method-override")
 require('dotenv').config()
 
 
@@ -22,6 +23,8 @@ const db = mongoose.connection
 
 db.on('connected', () => { console.log("MongoDB is Connected...") })
 db.on('error', (error) => console.log('MongoDB Error ' + error.message));
+
+app.use(methodOverride('_method'));
 
 app.use('/home/armor', armorRouter)
 app.use('/home/equipment', equipmentRouter)

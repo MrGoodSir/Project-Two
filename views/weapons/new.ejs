@@ -8,14 +8,25 @@
     <title>Document</title>
 </head>
 
+<form action="/home">
+    <input type="submit" value="Home">
+</form>
+
 <body>
     <h1>This is the new Weapons page</h1>
 
     <input type="submit" value="Create">
-    <input type="input" placeholder="Weapon Name">
-    <input type="input" placeholder="Description">
-    <input type="input" placeholder="Price">
-    <input type="input" placeholder="Quanity">
+
+    <input type="text" name="name" placeholder="Weapon Name">
+    <input type="text" name="description" placeholder="Description">
+    <input type="text" name="price" placeholder="Price">
+    <input type="text" name="quanity" placeholder="Quanity">
+
+    <br>
+
+    <form action="/home/weapons">
+        <input type="submit" value="Back">
+    </form>
 
 
 

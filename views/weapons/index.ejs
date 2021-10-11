@@ -8,9 +8,13 @@
     <title>Document</title>
 </head>
 
-<a href="/home/weapons/seed">Seed</a> <br>. <br> .
+
 
 <nav>
+
+    <form action="/home/weapons/seed">
+        <input type="submit" value="Refresh the product">
+    </form>
 
     <form action="/home">
         <input type="submit" value="Back">
@@ -34,9 +38,13 @@
 
 
 
-                <a href="/home/weapons/show/<%=weapon._id%>">
+                <a href="/home/weapons/<%=weapon._id%>">
                     <img src="<%= weapon.image %>" style="max-height: 250px; max-width: 250px;">
                 </a>
+
+                <form action="/home/weapons/<%= weapon.id %>?_method=DELETE" method="POST">
+                    <input type="submit" value="DELETE" />
+                </form>
 
 
 
@@ -45,9 +53,6 @@
 
 
 
-            <!-- <form action="/home/weapons/seed">
-                <input type="submit" value="Refresh the product">
-            </form> -->
 
 
 

@@ -38,7 +38,7 @@ module.exports = [{
         name: "Evade",
         description: "Lunges you to a direction of your choice",
         price: 500,
-        image: "https://lh3.googleusercontent.com/proxy/st6N7a4XzOfSz9v_jwUZ_q0vnybI2lJhtxOaluMUNVsvYrjIfY2VYB8xp2elyJE8xMm5gIgq9s3kVK0fSxPELoFJL-lmwICV8gcmFtC7yarR6jGqAKCplYIlxQdckfmwE-v7XA",
+        image: "http://halofanforlife.com/wp-content/uploads/2012/06/2820935-web_preview-300x168.png",
         quanity: 10
 
     },
