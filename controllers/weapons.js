@@ -1,9 +1,10 @@
 const express = require('express');
+const app = express();
 const weaponRouter = express.Router();
 const weaponSeed = require('../models/Seeds/weaponSeed')
 const Weapon = require('../models/weapon');
 
-
+app.use(express.static("public"));
 
 // Seed Route
 

@@ -1,7 +1,10 @@
-const express = require('express')
+const express = require('express');
+const app = express();
 const armorRouter = express.Router();
 const armorSeed = require('../models/Seeds/armorSeed')
 const Armor = require('../models/armor')
+
+app.use(express.static("public"));
 
 
 

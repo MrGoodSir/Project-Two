@@ -6,27 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=e, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
     <title>Home Page</title>
 </head>
 
 <body class="homeBody">
-    <h1>
-        Pick your product
-    </h1>
 
+    <div class="homeInputForm">
+        <form action="/home/armor">
 
-    <form action="/home/armor">
-        <input type="submit" value="Armor">
-    </form>
-    <form action="/home/equipment">
-        <input type="submit" value="Equipment">
-    </form>
-    <form action="/home/weapons">
-        <input type="submit" value="Weapons">
-    </form>
-    <form action="/">
-        <input type="submit" value="Exit">
-    </form>
+            <div class="homeInputDiv">
+                <input class="homeButton" type="submit" value="Armor">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="homeInputForm">
+        <form action="/home/equipment">
+
+            <div class="homeInputDiv">
+                <input class="homeButton" type="submit" value="Equipment">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="homeInputForm">
+        <form action="/home/weapons">
+
+            <div class="homeInputDiv">
+                <input class="homeButton" type="submit" value="Weapons">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="homeInputForm">
+        <form action="/">
+
+            <div class="homeInputDiv">
+                <input class="homeButton" type="submit" value="Exit">
+            </div>
+
+        </form>
+    </div>
 
 
 

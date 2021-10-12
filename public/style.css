@@ -1,5 +1,8 @@
 /* Start Page CSS */
 
+
+/*=============================================================================================*/
+
 .startBody {
     text-align: center;
     background-image: url("https://i.ytimg.com/vi/E5cHeFeNrgE/maxresdefault.jpg");
@@ -7,9 +10,10 @@
 }
 
 .startH1 {
+    font-family: 'Inconsolata', monospace;
     margin-top: 150px;
     font-size: 60px;
-    color: rgb(68, 68, 173)
+    color: rgb(104, 104, 126)
 }
 
 .startButton {
@@ -17,14 +21,14 @@
     font-size: 40px;
     padding: 10px 100px;
     background-color: rgb(7, 25, 26);
-    color: rgb(68, 68, 172);
+    color: rgb(104, 104, 126);
     background-image: url("https://cdn.wallpapersafari.com/5/69/vYXw4K.jpg");
     border-radius: 15px;
     border: 5px solid black;
 }
 
 .startButton:hover {
-    border: 5px solid rgb(68, 68, 173)
+    border: 5px solid rgb(104, 104, 126)
 }
 
 .startAll {
@@ -81,33 +85,79 @@
 }
 
 
+/* Home Page CSS */
+
+
+/*=============================================================================================*/
+
+.homeBody {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
+    background-size: cover;
 }
 
-/* Home Page CSS */
-.homeBody {
-    text-align: center;
+.homeH1 {
+    font-size: 70px;
+    color: rgb(104, 104, 126)
 }
+
+.homeInputForm {
+    color: red;
+}
+
+.homeButton {
+    padding: 25px 140px;
+    font-size: 20px;
+    margin-top: 100px;
+    background-color: rgb(7, 25, 26);
+    color: rgb(104, 104, 126);
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.homeInputDiv {
+    color: blue;
+    padding: 10px;
+}
+
+.homeButton:hover {
+    border: 5px solid rgb(104, 104, 126)
+}
+
 
 /* =================    ARMOR    ================= */
 
+
 /* Armors Index Page */
+
 
 /* Armors New Page */
 
+
 /* Armors Show Page */
+
 
 /* =================    EQUIPMENT    ================= */
 
+
 /* Equipment Index Page */
+
 
 /* Equipment New Page */
 
+
 /* Equipment Show Page */
+
 
 /* =================    WEAPONS    ================= */
 
+
 /* Weapons Index Page */
 
+
 /* Weapons New Page */
+
 
 /* Weapons Show Page */

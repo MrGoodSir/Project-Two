@@ -1,7 +1,10 @@
 const express = require('express');
+const app = express();
 const equipmentRouter = express.Router();
 const equipmentSeed = require('../models/Seeds/equipmentSeed')
 const Equipment = require('../models/equipment');
+
+app.use(express.static("public"));
 
 // Seed Route
 
