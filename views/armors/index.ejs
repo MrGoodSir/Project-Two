@@ -18,11 +18,6 @@
         </form>
     </div>
 
-    <div class="armorIndexHome">
-        <form action="/home">
-            <input class="armorIndexHeaderButton" type="submit" value="Home">
-        </form>
-    </div>
 
     <div class="armorIndexNew">
         <form action="/home/armor/new">
@@ -36,6 +31,11 @@
         </form>
     </div>
 
+    <div class="armorIndexHome">
+        <form action="/home">
+            <input class="armorIndexHeaderButton" type="submit" value="Home">
+        </form>
+    </div>
 
 </nav>
 
@@ -43,7 +43,7 @@
     <h1 class="armorIndexH1">Our Armor</h1>
 
 
-    <ul>
+    <ul class="armorUL">
         <% armors.forEach(armor=> { %>
 
 
@@ -53,8 +53,9 @@
 
 
 
-                <div style="color: rgb(104, 104, 126); padding-bottom: 10px;">
-                    <%= armor.name %> Armor<br></div>
+                <div class="armorIndexName">
+                    <%= armor.name %> Armor<br>
+                </div>
                 <a href="/home/armor/<%=armor._id%>" style="text-decoration: none; color: black;">
                     <div class="armorIndexImage"><img src="<%= armor.image %>" style="max-height: 450px; max-width: 450px;"></div><br>
 

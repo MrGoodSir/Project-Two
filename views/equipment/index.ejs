@@ -18,12 +18,6 @@
         </form>
     </div>
 
-    <div class="equipmentIndexHome">
-        <form action="/home">
-            <input class="equipmentIndexHeaderButton" type="submit" value="Home">
-        </form>
-    </div>
-
     <div class="equipmentIndexNew">
         <form action="/home/equipment/new">
             <input class="equipmentIndexHeaderButton" type="submit" value="Create New Equipment">
@@ -36,6 +30,11 @@
         </form>
     </div>
 
+    <div class="equipmentIndexHome">
+        <form action="/home">
+            <input class="equipmentIndexHeaderButton" type="submit" value="Home">
+        </form>
+    </div>
 
 </nav>
 
@@ -43,7 +42,7 @@
     <h1 class="equipmentIndexH1">Our Equipment</h1>
 
 
-    <ul>
+    <ul class="equipmentUL">
         <% equipments.forEach(equipment=> { %>
 
 
@@ -53,8 +52,8 @@
 
 
 
-                <div style="color: rgb(104, 104, 126); padding-bottom: 10px;">
-                    <%= equipment.name %> Equipment <br></div>
+                <div class="equipmentIndexName">
+                    <%= equipment.name %> <br></div>
                 <a href="/home/equipment/<%=equipment._id%>" style="text-decoration: none; color: black;">
                     <div class="equipmentIndexImage"><img src="<%= equipment.image %>" style="max-height: 450px; max-width: 450px;"></div><br>
 

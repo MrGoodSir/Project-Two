@@ -132,6 +132,12 @@
 
 /* Armors Index Page */
 
+.armorIndexName {
+    color: rgb(148, 148, 150);
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
 .armorsIndexBody {
     text-align: center;
     background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
@@ -168,7 +174,7 @@
     font-size: 60px;
 }
 
-ul {
+.armorUL {
     margin-left: 36%;
     max-width: 450px;
 }
@@ -197,7 +203,7 @@ ul {
     margin-right: 300px;
 }
 
-.armorIndexHome {
+.armorIndexRefresh {
     margin-left: 200px;
     margin-right: 300px;
 }
@@ -223,6 +229,93 @@ ul {
 
 
 /* Equipment Index Page */
+
+.equipmentIndexName {
+    color: rgb(148, 148, 150);
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.equipmentIndexBody {
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/20/67/ff/2067ff18c3b7c88224f682518058d669.jpg");
+    background-size: 1890px 1000px;
+}
+
+.equipmentIndexDelete {
+    color: black;
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.equipmentIndexEdit {
+    color: black;
+    padding: 0px 17px;
+    background-color: rgb(63, 224, 63);
+    border: 5px solid rgb(63, 224, 63);
+    border-radius: 10px;
+}
+
+.equipmentIndexEdit:hover {
+    border: 5px solid rgb(104, 104, 126);
+    max-width: 150px;
+}
+
+.equipmentIndexDelete:hover {
+    border: 5px solid rgb(104, 104, 126);
+    max-width: 150px;
+}
+
+.equipmentIndexH1 {
+    color: rgb(104, 104, 126);
+    font-size: 60px;
+    text-align: center;
+}
+
+.equipmentUL {
+    margin-left: 36%;
+    max-width: 450px;
+}
+
+.equipmentIndexDeleteEdit {
+    display: flex;
+    margin-left: 145px;
+}
+
+.equipmentIndexDeleteButton {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.equipmentIndexHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.equipmentIndexNew {
+    margin-right: 245px;
+}
+
+.equipmentIndexBack {
+    margin-right: 300px;
+}
+
+.equipmentIndexRefresh {
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.equipmentIndexHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: rgb(104, 104, 126);
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
 
 
 /* Equipment New Page */
