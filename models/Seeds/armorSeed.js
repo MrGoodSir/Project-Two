@@ -24,7 +24,7 @@ module.exports = [{
         description: "Standard armor for newly recruited Spartan-IV",
         weight: 750,
         price: 550000,
-        image: "https://www.vhv.rs/dpng/d/505-5059956_halo-reach-vanity-armor-hd-png-download.png",
+        image: "https://halo.wiki.gallery/images/thumb/f/f1/HTMCC_HR_Spartan_Mark_V_%28B%29.png/250px-HTMCC_HR_Spartan_Mark_V_%28B%29.png",
         quanity: 200
 
     },
@@ -44,7 +44,7 @@ module.exports = [{
         description: "Spectialzed for snipers",
         weight: 500,
         price: 1500000,
-        image: "https://pbs.twimg.com/media/EZIxELNXkAA8s7N.jpg",
+        image: "https://halo.wiki.gallery/images/thumb/e/ef/HTMCC_H3_Scout_Crop.png/275px-HTMCC_H3_Scout_Crop.png",
         quanity: 3
 
     },

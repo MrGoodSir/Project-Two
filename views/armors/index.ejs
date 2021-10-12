@@ -10,52 +10,76 @@
 </head>
 
 
-<nav>
+<nav class="armorIndexHeaderButtons">
 
-    <form action="/home/armor/seed">
-        <input type="submit" value="Refresh the product">
-    </form>
+    <div class="armorIndexBack">
+        <form action="/home">
+            <input class="armorIndexHeaderButton" type="submit" value="Back">
+        </form>
+    </div>
 
+    <div class="armorIndexHome">
+        <form action="/home">
+            <input class="armorIndexHeaderButton" type="submit" value="Home">
+        </form>
+    </div>
 
-    <form action="/home/armor/new">
-        <input type="submit" value="Create New Armor">
-    </form>
+    <div class="armorIndexNew">
+        <form action="/home/armor/new">
+            <input class="armorIndexHeaderButton" type="submit" value="Create New Armor">
+        </form>
+    </div>
 
-    <form action="/home">
-        <input type="submit" value="Back">
-    </form>
+    <div class="armorIndexRefresh">
+        <form action="/home/armor/seed">
+            <input class="armorIndexHeaderButton" type="submit" value="Refresh the product">
+        </form>
+    </div>
+
 
 </nav>
 
-<body>
-    <h1>Check out our armor</h1>
+<body class="armorsIndexBody">
+    <h1 class="armorIndexH1">Our Armor</h1>
 
 
     <ul>
         <% armors.forEach(armor=> { %>
+
+
             <li>
 
 
 
+
+
+                <div style="color: rgb(104, 104, 126); padding-bottom: 10px;">
+                    <%= armor.name %> Armor<br></div>
                 <a href="/home/armor/<%=armor._id%>" style="text-decoration: none; color: black;">
-
-                    <%= armor.name %> Armor<br>
-
-                        <img src="<%= armor.image %>" style="max-height: 250px; max-width: 250px;">
+                    <div class="armorIndexImage"><img src="<%= armor.image %>" style="max-height: 450px; max-width: 450px;"></div><br>
 
                 </a>
 
-                <form action="/home/armor/<%=armor.id%>?_method=DELETE" method="POST">
-                    <input type="submit" value="DELETE">
-                </form>
+                <div class="armorIndexDeleteEdit">
+                    <div class="armorIndexDeleteButton">
+                        <form action="/home/armor/<%=armor.id%>?_method=DELETE" method="POST">
+                            <input class="armorIndexDelete" type="submit" value="DELETE">
+                        </form>
+                    </div>
 
-                <form action="/home/armor/<%=armor.id%>/edit">
-                    <input type="submit" value="EDIT">
-                </form>
+                    <div clas="armorIndexEditButton">
+                        <form action="/home/armor/<%=armor.id%>/edit">
+                            <input class="armorIndexEdit" type="submit" value="EDIT">
+                        </form>
+                    </div>
+                </div>
 
 
 
             </li>
+
+            <br>
+
             <% }) %>
 
 

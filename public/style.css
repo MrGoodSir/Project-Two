@@ -132,6 +132,86 @@
 
 /* Armors Index Page */
 
+.armorsIndexBody {
+    text-align: center;
+    background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
+    background-size: 1920px 1000px;
+}
+
+.armorIndexDelete {
+    color: black;
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.armorIndexEdit {
+    color: black;
+    padding: 0px 17px;
+    background-color: rgb(63, 224, 63);
+    border: 5px solid rgb(63, 224, 63);
+    border-radius: 10px;
+}
+
+.armorIndexEdit:hover {
+    border: 5px solid rgb(104, 104, 126);
+    max-width: 150px;
+}
+
+.armorIndexDelete:hover {
+    border: 5px solid rgb(104, 104, 126);
+    max-width: 150px;
+}
+
+.armorIndexH1 {
+    color: rgb(104, 104, 126);
+    font-size: 60px;
+}
+
+ul {
+    margin-left: 36%;
+    max-width: 450px;
+}
+
+.armorIndexDeleteEdit {
+    display: flex;
+    margin-left: 145px;
+}
+
+.armorIndexDeleteButton {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.armorIndexHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.armorIndexNew {
+    margin-right: 280px;
+}
+
+.armorIndexBack {
+    margin-right: 300px;
+}
+
+.armorIndexHome {
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.armorIndexHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: rgb(104, 104, 126);
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
 
 /* Armors New Page */
 
