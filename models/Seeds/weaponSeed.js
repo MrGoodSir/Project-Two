@@ -38,7 +38,7 @@ module.exports = [{
         weight: 1,
         price: 2000,
         magazineCapacity: "NA",
-        image: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/halo-4/d/d8/Energyswordh4.png",
+        image: "https://www.pngkey.com/png/full/186-1868303_traditional-energy-sword-halo-3-energy-sword-png.png",
         quanity: 0
 
     },

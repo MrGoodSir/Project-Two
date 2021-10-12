@@ -329,6 +329,92 @@
 
 /* Weapons Index Page */
 
+.weaponIndexName {
+    color: rgb(104, 104, 126);
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+.weaponIndexBody {
+    text-align: center;
+    background-image: url("https://wallpaperaccess.com/full/3369435.jpg");
+    background-size: 1890px 1000px;
+}
+
+.weaponIndexDelete {
+    color: rgb(0, 0, 0);
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.weaponIndexEdit {
+    color: rgb(0, 0, 0);
+    padding: 0px 17px;
+    background-color: rgb(63, 224, 63);
+    border: 5px solid rgb(63, 224, 63);
+    border-radius: 10px;
+}
+
+.weaponIndexEdit:hover {
+    border: 5px solid rgb(104, 104, 126);
+    max-width: 150px;
+}
+
+.weaponIndexDelete:hover {
+    border: 5px solid rgb(104, 104, 126);
+    max-width: 150px;
+}
+
+.weaponIndexH1 {
+    color: rgb(104, 104, 126);
+    font-size: 60px;
+    text-align: center;
+}
+
+.weaponUL {
+    margin-left: 36%;
+    max-width: 450px;
+}
+
+.weaponIndexDeleteEdit {
+    display: flex;
+    margin-left: 145px;
+}
+
+.weaponIndexDeleteButton {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.weaponIndexHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.weaponIndexNew {
+    margin-right: 245px;
+}
+
+.weaponIndexBack {
+    margin-right: 300px;
+}
+
+.weaponIndexRefresh {
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.weaponIndexHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    color: rgb(104, 104, 126);
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
 
 /* Weapons New Page */
 
