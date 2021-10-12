@@ -93,7 +93,6 @@ armorRouter.get('/:id', (req, res) => {
         res.render('../views/armors/show.ejs', {
             armor
         })
-
     })
 })
 

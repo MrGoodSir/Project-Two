@@ -1,40 +1,113 @@
 /* Start Page CSS */
 
+.startBody {
+    text-align: center;
+    background-image: url("https://i.ytimg.com/vi/E5cHeFeNrgE/maxresdefault.jpg");
+    background-size: cover;
+}
+
+.startH1 {
+    margin-top: 150px;
+    font-size: 60px;
+    color: rgb(68, 68, 173)
+}
+
+.startButton {
+    margin-top: 25%;
+    font-size: 40px;
+    padding: 10px 100px;
+    background-color: rgb(7, 25, 26);
+    color: rgb(68, 68, 172);
+    background-image: url("https://cdn.wallpapersafari.com/5/69/vYXw4K.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.startButton:hover {
+    border: 5px solid rgb(68, 68, 173)
+}
+
+.startAll {
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+}
 
 /* Home Page CSS */
-
+.homeBody {
+    text-align: center;
+}
 
 /* =================    ARMOR    ================= */
 
-
 /* Armors Index Page */
-
 
 /* Armors New Page */
 
-
 /* Armors Show Page */
-
 
 /* =================    EQUIPMENT    ================= */
 
-
 /* Equipment Index Page */
-
 
 /* Equipment New Page */
 
-
 /* Equipment Show Page */
-
 
 /* =================    WEAPONS    ================= */
 
-
 /* Weapons Index Page */
 
-
 /* Weapons New Page */
-
 
 /* Weapons Show Page */
