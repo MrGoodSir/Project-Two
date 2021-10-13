@@ -740,17 +740,12 @@
 
 /*=======================================================================================================================================================*/
 
-.equipmentShowDivBody {
-    display: flex;
-    justify-content: center;
-}
-
 .equipmentShowBody {
     color: rgb(148, 148, 150);
     background-image: url("https://images.alphacoders.com/539/thumb-1920-53963.jpg");
     text-align: center;
     font-size: 25px;
-    background-size: 1920px 960px;
+    background-size: 1920px 980px;
 }
 
 .equipmentShowHeaderButtons {
@@ -801,23 +796,11 @@
     border: 5px solid black;
 }
 
-.equipmentShowH1 {
-    margin-top: 150px;
-    margin-right: 515px;
-}
-
 .equipmentShowImage {
-    margin-top: 50px;
-    margin-right: 100px;
-    max-height: 450px;
-    max-width: 450px;
-    min-width: 400px;
-    min-height: 250px;
-}
-
-.equipmentShowH2 {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    max-height: 200px;
+    max-width: 200px;
+    min-width: 100px;
+    min-height: 100px;
 }
 
 
@@ -1137,11 +1120,6 @@
 
 /*=======================================================================================================================================================*/
 
-.weaponShowDivBody {
-    display: flex;
-    justify-content: center;
-}
-
 .weaponShowBody {
     color: rgb(148, 148, 150);
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Free-Halo-Background.jpg");
@@ -1197,19 +1175,13 @@
     border: 5px solid black;
 }
 
-.weaponShowH1 {
-    margin-top: 150px;
-    margin-right: 515px;
+.weaponShowH2 {
+    margin-bottom: 30px;
 }
 
 .weaponShowImage {
-    margin-top: 50px;
-    margin-right: 100px;
-}
-
-.weaponShowH2 {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 
