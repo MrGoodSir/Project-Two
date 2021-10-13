@@ -11,62 +11,82 @@
     </title>
 </head>
 
-<nav>
+<nav class="weaponShowHeaderButtons">
+
+    <form action="/home/weapons">
+        <input class="weaponShowBackHeaderButton" type="submit" value="Back">
+    </form>
 
     <form action="/home">
-        <input type="submit" value="Home">
+        <input class="weaponShowHomeHeaderButton" type="submit" value="Home">
     </form>
 
 </nav>
 
-<body>
-    <h1>
-        <%=weapon.name %>
-    </h1>
-    <img src="<%=weapon.image%>" style="max-height: 400px; max-width: 400px;">
-
-    <h2>Information:</h2> <br>
-
-    <p>
-        <%=weapon.description%>
-    </p>
-
-    <p>
-        $
-        <%=weapon.price%>
-    </p>
 
 
+<div class="weaponShowAllBody">
+
+    <body class="weaponShowBody">
 
 
+        <div class="weaponShowDivBody">
+            <div class="weaponShowImage">
+                <img src="<%=weapon.image%>" style="max-height: 400px; max-width: 400px;">
+            </div>
 
-</body>
+            <h1 class="weaponShowH1">
+                <%=weapon.name %>
+            </h1>
+        </div>
 
-<% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
 
-    <% if(weapon.quanity >=1) { %>
+        <h2 class="weaponShowH2">Information:</h2> <br>
 
         <p>
-            Quanity :
-            <%=weapon.quanity%>
+            <%=weapon.description%>
         </p>
 
-        <form action='/home/weapons/<%=weapon._id%>/buy?_method=PUT' method='POST'>
-            <input type='submit' value="Buy">
-        </form>
+        <p>
+            $
+            <%=weapon.price%>
+        </p>
 
-        <% } else { %>
-            <h3 style="color: red;">OUT OF STOCK</h3>
-            <% } %>
+        <p>
+            <%=weapon.weight%> LBS
+        </p>
 
 
-                <form action="/home/weapons">
-                    <input type="submit" value="Back">
-                </form>
 
-                <form action="/home/weapons/<%=weapon.id%>/edit">
-                    <input type="submit" value="Edit">
-                </form>
 
+
+
+    </body>
+
+    <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
+
+        <% if(weapon.quanity >=1) { %>
+
+            <p>
+                Quanity :
+                <%=weapon.quanity%>
+            </p>
+
+            <form action='/home/weapons/<%=weapon._id%>/buy?_method=PUT' method='POST'>
+                <input class="weaponShowBuyButton" type='submit' value="Buy">
+            </form>
+
+            <% } else { %>
+                <h3 style="color: red;">OUT OF STOCK</h3>
+                <% } %>
+
+
+                    <form action="/home/weapons/<%=weapon.id%>/edit">
+                        <input class="weaponShowEditButton" type="submit" value="Edit">
+                    </form>
+
+
+
+</div>
 
 </html>
