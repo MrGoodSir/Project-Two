@@ -132,6 +132,9 @@
 
 /* Armors Index Page */
 
+
+/*=======================================================================================================================================================*/
+
 .armorIndexName {
     color: rgb(148, 148, 150);
     padding-bottom: 10px;
@@ -229,6 +232,9 @@
 
 
 /* Armors New Page */
+
+
+/*=======================================================================================================================================================*/
 
 .armorNewBody {
     background-image: url("https://www.343industries.org/forum/uploads/gallery/album_210/large.gallery_20452_210_128356.jpg.46f369bccba575a21601ef795a36de6e.jpg");
@@ -330,7 +336,13 @@
 /* Armors Show Page */
 
 
+/*=======================================================================================================================================================*/
+
+
 /* Armors Edit Page */
+
+
+/*=======================================================================================================================================================*/
 
 .armorEditBody {
     background-image: url("https://c4.wallpaperflare.com/wallpaper/696/95/694/halo-black-master-chief-video-game-wallpaper-preview.jpg");
@@ -433,6 +445,9 @@
 
 
 /* Equipment Index Page */
+
+
+/*=======================================================================================================================================================*/
 
 .equipmentIndexName {
     color: rgb(148, 148, 150);
@@ -540,6 +555,9 @@
 
 /* Equipment New Page */
 
+
+/*=======================================================================================================================================================*/
+
 .equipmentNewBody {
     background-image: url("https://wallpaperaccess.com/full/3369502.png");
     background-size: cover;
@@ -640,10 +658,16 @@
 /* Equipment Show Page */
 
 
+/*=======================================================================================================================================================*/
+
+
 /* Equipment Edit Page */
 
+
+/*=======================================================================================================================================================*/
+
 .equipmentEditBody {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/696/95/694/halo-black-master-chief-video-game-wallpaper-preview.jpg");
+    background-image: url("https://i.pinimg.com/originals/22/1b/bb/221bbb81f21919c5d9ecb2d4604c9bdf.jpg");
     background-size: cover;
     text-align: center;
 }
@@ -744,6 +768,9 @@
 
 /* Weapons Index Page */
 
+
+/*=======================================================================================================================================================*/
+
 .weaponIndexName {
     color: rgb(104, 104, 126);
     padding-bottom: 10px;
@@ -841,6 +868,9 @@
 
 
 /* Weapons New Page */
+
+
+/*=======================================================================================================================================================*/
 
 .weaponNewBody {
     background-image: url("http://t.wallpaperweb.org/wallpaper/games/1920x1080/Halo_Reach_4.jpg");
@@ -941,3 +971,108 @@
 
 
 /* Weapons Show Page */
+
+
+/*=======================================================================================================================================================*/
+
+
+/* Weapons Edit Page */
+
+
+/*=======================================================================================================================================================*/
+
+.weaponEditBody {
+    background-image: url("https://www.teahub.io/photos/full/97-972792_wallpaper-halo-wars-video-games.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.weaponEditHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.weaponEditBackHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.weaponEditHomeHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    margin-left: 1610px;
+}
+
+.weaponEditCreateHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.weaponEditBackHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponEditHomeHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponEditCreateHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponEditHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponEditActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.weaponEditActualInputBox:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponEditH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.weaponEditTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponEditMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponEditBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}
