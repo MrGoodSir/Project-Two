@@ -13,12 +13,6 @@
 <li>Heroku</li>
 </ul>
 
-<h2>Take a look!</h2>
-
-
-![Screenshot!](Project-1-caputre.PNG)
-
-
 <h2>Getting Started</h2>
 
 [Click Here]()  to see the application in action! 
@@ -28,7 +22,13 @@
 <ul>
 <li> I want an add to cart option in the future</li>
 </ul>
+  
+<h2>Take a look!</h2>
 
+
+![Screenshot!](Screenshot1.PNG)
+![Screenshot!](Screenshot2.PNG)
+![Screenshot!](Screenshot3.PNG)
 
 
 
