@@ -330,6 +330,105 @@
 /* Armors Show Page */
 
 
+/* Armors Edit Page */
+
+.armorEditBody {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/696/95/694/halo-black-master-chief-video-game-wallpaper-preview.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.armorEditHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.armorEditBackHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.armorEditHomeHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    margin-left: 1610px;
+}
+
+.armorEditCreateHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.armorEditBackHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorEditHomeHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorEditCreateHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorEditHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorEditActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.armorEditActualInputBox:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorEditH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.armorEditTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.armorEditMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.armorEditBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* =================    EQUIPMENT    ================= */
 
 
@@ -539,6 +638,105 @@
 
 
 /* Equipment Show Page */
+
+
+/* Equipment Edit Page */
+
+.equipmentEditBody {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/696/95/694/halo-black-master-chief-video-game-wallpaper-preview.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.equipmentEditHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.equipmentEditBackHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.equipmentEditHomeHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    margin-left: 1610px;
+}
+
+.equipmentEditCreateHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.equipmentEditBackHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentEditHomeHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentEditCreateHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentEditHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentEditActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.equipmentEditActualInputBox:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentEditH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.equipmentEditTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.equipmentEditMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.equipmentEditBottomInput {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* =================    WEAPONS    ================= */

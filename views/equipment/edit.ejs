@@ -6,45 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Document</title>
+    <title>Edit Equipment</title>
 </head>
 
-<body>
-    <h1>This is the Equipment Edit Page</h1>
+<nav class="equipmentEditHeaderButtons">
 
-    <form action="/home/equipment/<%=equipment._id%>?_method=PUT" method="POST">
+    <form action="/home/equipment">
+        <input class="equipmentEditBackHeaderButton" type="submit" value="Back">
+    </form>
 
-        <div>
-            Name: <input type="text" name="name" value="<%=equipment.name%>"><br>
+    <form action="/home">
+        <input class="equipmentEditHomeHeaderButton" type="submit" value="Home">
+    </form>
+
+</nav>
+
+<body class="equipmentEditBody">
+
+    <h1 class="equipmentEditH1">Edit Equipment</h1>
+
+    <form action="/home/equipment/<%=equipment._id%>?_method=PUT" method="post">
+
+
+        <div class="equipmentEditTopTwoInput">
+            <div class="equipmentEditInputBox">
+                <input class="equipmentEditActualInputBox" type="text" name="name" autocomplete="off" placeholder="Equipment Name" value="<%=equipment.name%>" required>
+            </div>
+
+            <div class="equipmentEditInputBox">
+                <input class="equipmentEditActualInputBox" type="text" name="description" placeholder="Description" value="<%=equipment.description%>" autocomplete="off" required>
+            </div>
         </div>
 
-        <div>
-            Image: <input type="text" name="image" value="<%=equipment.image%>"><br>
+        <div class="equipmentEditMiddleTwoInput">
+            <div class="equipmentEditInputBox">
+                <input class="equipmentEditActualInputBox" type="text" name="image" placeholder="Image URL" value="<%=equipment.image%>" autocomplete="off">
+            </div>
+
+            <div class="equipmentEditInputBox">
+                <input class="equipmentEditActualInputBox" type="text" name="quanity" placeholder="Quanity" value="<%=equipment.quanity%>" autocomplete="off" required>
+            </div>
         </div>
 
-        <div>
-            Description: <input type="text" name="description" value="<%=equipment.description%>"><br>
+        <div class="equipmentEditBottomInput">
+            <div class="equipmentEditInputBox">
+                <input class="equipmentEditActualInputBox" type="text" name="price" placeholder="Price" value="<%=equipment.price%>" autocomplete="off" required>
+            </div>
         </div>
 
-        <div>
-            Weight: <input type="text" name="weight" value="<%=equipment.weight%>"><br>
-        </div>
+        <br>
 
-        <div>
-            Price: <input type="text" name="price" value="<%=equipment.price%>"><br>
-        </div>
 
-        <div>
-            Quanity: <input type="text" name="quanity" value="<%=equipment.quanity%>">
-        </div>
-
-        <div>
-            <input type="submit" value="Submit Changes">
-        </div>
-
+        <input class="equipmentEditCreateHeaderButton" type="submit" value="Submit Changes">
 
 
     </form>
+
+
 </body>
 
 </html>

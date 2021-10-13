@@ -6,45 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Document</title>
+    <title>Edit Armor</title>
 </head>
 
-<body>
-    <h1>This is the Armor Edit Page</h1>
+<nav class="armorEditHeaderButtons">
 
-    <form action="/home/armor/<%=armor._id%>?_method=PUT" method="POST">
+    <form action="/home/armor">
+        <input class="armorEditBackHeaderButton" type="submit" value="Back">
+    </form>
 
-        <div>
-            Name: <input type="text" name="name" value="<%=armor.name%>"><br>
+    <form action="/home">
+        <input class="armorEditHomeHeaderButton" type="submit" value="Home">
+    </form>
+
+</nav>
+
+<body class="armorEditBody">
+
+    <h1 class="armorEditH1">Edit Armor</h1>
+
+    <form action="/home/armor/<%=armor._id%>?_method=PUT" method="post">
+
+
+        <div class="armorEditTopTwoInput">
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox" type="text" name="name" autocomplete="off" value="<%=armor.name%>" required>
+            </div>
+
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox" type="text" name="description" value="<%=armor.description%>" autocomplete="off" required>
+            </div>
         </div>
 
-        <div>
-            Image: <input type="text" name="image" value="<%=armor.image%>"><br>
+        <div class="armorEditMiddleTwoInput">
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox" type="text" name="weight" value="<%=armor.weight%>" autocomplete="off" required>
+            </div>
+
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox" type="text" name="price" value="<%=armor.price%>" autocomplete="off" required>
+            </div>
         </div>
 
-        <div>
-            Description: <input type="text" name="description" value="<%=armor.description%>"><br>
+        <div class="armorEditBottomTwoInput">
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox" type="text" name="image" value="<%=armor.image%>" autocomplete="off">
+            </div>
+
+            <div class="armorEditInputBox">
+                <input class="armorEditActualInputBox" type="text" name="quanity" value="<%=armor.quanity%>" autocomplete="off" required>
+            </div>
         </div>
 
-        <div>
-            Weight: <input type="text" name="weight" value="<%=armor.weight%>"><br>
-        </div>
+        <br>
 
-        <div>
-            Price: <input type="text" name="price" value="<%=armor.price%>"><br>
-        </div>
 
-        <div>
-            Quanity: <input type="text" name="quanity" value="<%=armor.quanity%>">
-        </div>
-
-        <div>
-            <input type="submit" value="Submit Changes">
-        </div>
-
+        <input class="armorEditCreateHeaderButton" type="submit" value="Submit Changes">
 
 
     </form>
+
+
 </body>
 
 </html>
