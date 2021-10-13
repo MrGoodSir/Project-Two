@@ -6,40 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Create New Armor</title>
+    <title>Create New Weapon</title>
 </head>
 
-<nav>
+<nav class="weaponNewHeaderButtons">
+
+    <form action="/home/weapons">
+        <input class="weaponNewBackHeaderButton" type="submit" value="Back">
+    </form>
 
     <form action="/home">
-        <input type="submit" value="Home">
+        <input class="weaponNewHomeHeaderButton" type="submit" value="Home">
     </form>
 
 </nav>
 
-<body>
+<body class="weaponNewBody">
 
-    <h1>This is the New Weapon page</h1>
+    <h1 class="weaponNewH1">Create Your Weapon</h1>
 
     <form action="/home/weapons" method="post">
 
-        <input type="submit" value="Create">
-        <input type="text" name="name" placeholder="Weapon Name" required>
-        <input type="text" name="description" placeholder="Description" required>
-        <input type="text" name="weight" placeholder="Weight" required>
-        <input type="text" name="price" placeholder="Price" required>
-        <input type="text" name="image" placeholder="Image">
-        <input type="text" name="quanity" placeholder="Quanity" required>
+
+        <div class="weaponNewTopTwoInput">
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox" type="text" name="name" autocomplete="off" placeholder="Weapon Name" required>
+            </div>
+
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox" type="text" name="description" placeholder="Description" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="weaponNewMiddleTwoInput">
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox" type="text" name="weight" placeholder="Weight" autocomplete="off" required>
+            </div>
+
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox" type="text" name="price" placeholder="Price" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="weaponNewBottomTwoInput">
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox" type="text" name="image" autocomplete="off" placeholder="Image">
+            </div>
+
+            <div class="weaponNewInputBox">
+                <input class="weaponNewActualInputBox" type="text" name="quanity" autocomplete="off" placeholder="Quanity" required>
+            </div>
+        </div>
 
         <br>
 
 
-    </form>
+        <input class="weaponNewCreateHeaderButton" type="submit" value="Create">
 
 
-    <form action="/home/weapons">
-        <input type="submit" value="Back">
     </form>
+
 
 </body>
 

@@ -273,6 +273,21 @@
     border: 5px solid black;
 }
 
+.armorNewBackHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorNewHomeHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.armorNewCreateHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
 .armorNewHeaderButton:hover {
     border: 5px solid rgb(104, 104, 126);
     border-radius: 15px;
@@ -283,6 +298,11 @@
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
+}
+
+.armorNewActualInputBox:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
 }
 
 .armorNewH1 {
@@ -422,7 +442,7 @@
 /* Equipment New Page */
 
 .equipmentNewBody {
-    background-image: url("https://www.343industries.org/forum/uploads/gallery/album_210/large.gallery_20452_210_128356.jpg.46f369bccba575a21601ef795a36de6e.jpg");
+    background-image: url("https://wallpaperaccess.com/full/3369502.png");
     background-size: cover;
     text-align: center;
 }
@@ -464,6 +484,21 @@
     border: 5px solid black;
 }
 
+.equipmentNewBackHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentNewHomeHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.equipmentNewCreateHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
 .equipmentNewHeaderButton:hover {
     border: 5px solid rgb(104, 104, 126);
     border-radius: 15px;
@@ -474,6 +509,11 @@
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
+}
+
+.equipmentNewActualInputBox:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
 }
 
 .equipmentNewH1 {
@@ -603,6 +643,103 @@
 
 
 /* Weapons New Page */
+
+.weaponNewBody {
+    background-image: url("http://t.wallpaperweb.org/wallpaper/games/1920x1080/Halo_Reach_4.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.weaponNewHeaderButtons {
+    display: inline-flex;
+    min-width: 1890px;
+    min-height: 40px;
+}
+
+.weaponNewBackHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.weaponNewHomeHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    margin-left: 1610px;
+}
+
+.weaponNewCreateHeaderButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.weaponNewBackHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponNewHomeHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponNewCreateHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponNewHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponNewActualInputBox {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.weaponNewActualInputBox:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.weaponNewH1 {
+    color: rgb(104, 104, 126);
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.weaponNewTopTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponNewMiddleTwoInput {
+    display: flex;
+    justify-content: center;
+}
+
+.weaponNewBottomTwoInput {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* Weapons Show Page */
