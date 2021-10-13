@@ -12,29 +12,37 @@
 
 <nav class="armorIndexHeaderButtons">
 
-    <div class="armorIndexBack">
-        <form action="/home">
-            <input class="armorIndexHeaderButton" type="submit" value="Back">
-        </form>
+
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexBack">
+            <form action="/home">
+                <input class="armorIndexHeaderButton" type="submit" value="Back">
+            </form>
+        </div>
     </div>
 
-
-    <div class="armorIndexNew">
-        <form action="/home/armor/new">
-            <input class="armorIndexHeaderButton" type="submit" value="Create New Armor">
-        </form>
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexNew">
+            <form action="/home/armor/new">
+                <input class="armorIndexHeaderButton" type="submit" value="Create New Armor">
+            </form>
+        </div>
     </div>
 
-    <div class="armorIndexRefresh">
-        <form action="/home/armor/seed">
-            <input class="armorIndexHeaderButton" type="submit" value="Refresh the product">
-        </form>
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexRefresh">
+            <form action="/home/armor/seed">
+                <input class="armorIndexHeaderButton" type="submit" value="Refresh the product">
+            </form>
+        </div>
     </div>
 
-    <div class="armorIndexHome">
-        <form action="/home">
-            <input class="armorIndexHeaderButton" type="submit" value="Home">
-        </form>
+    <div class="armorIndexActualHeaderButtons">
+        <div class="armorIndexHome">
+            <form action="/home">
+                <input class="armorIndexHeaderButton" type="submit" value="Home">
+            </form>
+        </div>
     </div>
 
 </nav>
@@ -57,7 +65,7 @@
                     <%= armor.name %> Armor<br>
                 </div>
                 <a href="/home/armor/<%=armor._id%>" style="text-decoration: none; color: black;">
-                    <div class="armorIndexImage"><img src="<%= armor.image %>" style="max-height: 450px; max-width: 450px;"></div><br>
+                    <img class="armorIndexImage" src="<%= armor.image %>" style="max-height: 450px; max-width: 450px;">
 
                 </a>
 

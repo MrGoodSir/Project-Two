@@ -218,6 +218,15 @@
     border: 5px solid black;
 }
 
+.armorIndexHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+}
+
+.armorIndexImage:hover {
+    background-color: rgba(39, 39, 48, 0.589);
+    border-radius: 5px;
+}
+
 
 /* Armors New Page */
 
@@ -317,6 +326,10 @@
     border: 5px solid black;
 }
 
+.equipmentIndexHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
+}
+
 
 /* Equipment New Page */
 
@@ -413,6 +426,10 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
+}
+
+.weaponIndexHeaderButton:hover {
+    border: 5px solid rgb(104, 104, 126);
 }
 
 
