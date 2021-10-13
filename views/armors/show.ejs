@@ -11,82 +11,94 @@
     </title>
 </head>
 
-<nav class="armorShowHeaderButtons">
+<body class="armorShowBody">
 
-    <form action="/home/armor">
-        <input class="armorShowBackHeaderButton" type="submit" value="Back">
-    </form>
+    <div class="armorShowBackButton">
+        <form action="/home/armor">
+            <input class="armorShowBackHeaderButton" type="submit" value="Back">
+        </form>
 
-    <form action="/home">
-        <input class="armorShowHomeHeaderButton" type="submit" value="Home">
-    </form>
+    </div>
 
-</nav>
-
+    <div class="armorShowLeftHalf">
 
 
-<div class="armorShowAllBody">
 
-    <body class="armorShowBody">
+        <img class="armorShowImage" src="<%=armor.image%>">
+
+    </div>
 
 
-        <div class="armorShowDivBody">
-            <div class="armorShowImage">
-                <img src="<%=armor.image%>" style="max-height: 400px; max-width: 400px;">
-            </div>
+    <div class="armorShowRightHalf">
+
+
+
+
+
+
+        <div class="armorShowBottomRightHalf">
 
             <h1 class="armorShowH1">
                 <%=armor.name %>
             </h1>
+
+
+            <h2 class="armorShowH2">Information:</h2> <br>
+
+            <p>
+                <%=armor.description%>
+            </p>
+
+            <p>
+                $
+                <%=armor.price%>
+            </p>
+
+            <p>
+                <%=armor.weight%> LBS
+            </p>
+
+
+
+
+
+
+
+
+            <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
+
+                <% if(armor.quanity >=1) { %>
+
+                    <p>
+                        Quanity :
+                        <%=armor.quanity%>
+                    </p>
+
+                    <form action='/home/armor/<%=armor._id%>/buy?_method=PUT' method='POST'>
+                        <input class="armorShowBuyButton" type='submit' value="Buy">
+                    </form>
+
+                    <% } else { %>
+                        <h3 style="color: red;">OUT OF STOCK</h3>
+                        <% } %>
+
+
+                            <form action="/home/armor/<%=armor.id%>/edit">
+                                <input class="armorShowEditButton" type="submit" value="Edit">
+                            </form>
+
         </div>
 
 
-        <h2 class="armorShowH2">Information:</h2> <br>
+    </div>
 
-        <p>
-            <%=armor.description%>
-        </p>
+    <div class="armorshowHomeButon">
+        <form action="/home">
+            <input class="armorShowHomeHeaderButton" type="submit" value="Home">
+        </form>
 
-        <p>
-            $
-            <%=armor.price%>
-        </p>
+    </div>
 
-        <p>
-            <%=armor.weight%> LBS
-        </p>
-
-
-
-
-
-
-    </body>
-
-    <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
-
-        <% if(armor.quanity >=1) { %>
-
-            <p>
-                Quanity :
-                <%=armor.quanity%>
-            </p>
-
-            <form action='/home/armor/<%=armor._id%>/buy?_method=PUT' method='POST'>
-                <input class="armorShowBuyButton" type='submit' value="Buy">
-            </form>
-
-            <% } else { %>
-                <h3 style="color: red;">OUT OF STOCK</h3>
-                <% } %>
-
-
-                    <form action="/home/armor/<%=armor.id%>/edit">
-                        <input class="armorShowEditButton" type="submit" value="Edit">
-                    </form>
-
-
-
-</div>
+</body>
 
 </html>

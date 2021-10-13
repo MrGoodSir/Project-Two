@@ -230,6 +230,11 @@
     border-radius: 15px;
 }
 
+.armorIndexImage {
+    max-height: 450px;
+    max-width: 450px;
+}
+
 
 /* Armors New Page */
 
@@ -339,23 +344,39 @@
 
 /*=======================================================================================================================================================*/
 
-.armorShowDivBody {
+.armorShowBody {
     display: flex;
     justify-content: center;
-}
-
-.armorShowBody {
-    color: rgb(148, 148, 150);
-    background-image: url("https://www.teahub.io/photos/full/273-2731688_halo-wars-2-wallpaper-4k.jpg");
-    text-align: center;
-    font-size: 20px;
+    background-image: url("https://i.pinimg.com/originals/1f/4d/01/1f4d01b259ca07e5dca4c9c048a16169.jpg");
     background-size: cover;
 }
 
+.armorShowImage {
+    max-height: 400px;
+    max-width: 400px;
+    padding-right: 100px;
+    padding-top: 150px;
+}
+
+.armorShowBottomRightHalf {
+    padding-left: -160;
+    font-size: 20px;
+    color: rgb(160, 160, 175);
+}
+
+.armorShowRightHalf {
+    padding-right: 450px;
+    padding-left: 200px;
+    padding-top: 150px;
+}
+
 .armorShowHeaderButtons {
-    display: inline-flex;
     min-width: 1890px;
     min-height: 40px;
+}
+
+.armorShowBackButton {
+    margin-right: 450px;
 }
 
 .armorShowBackHeaderButton {
@@ -366,6 +387,7 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
+    margin-right: 50%px;
 }
 
 .armorShowHomeHeaderButton {
@@ -376,7 +398,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .armorShowBuyButton {
@@ -390,7 +411,6 @@
 }
 
 .armorShowEditButton {
-    margin-top: 20px;
     padding: 10px 40px;
     font-size: 20px;
     background-color: rgb(7, 25, 26);
@@ -398,22 +418,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-}
-
-.armorShowH1 {
-    margin-top: 150px;
-    margin-right: 515px;
-}
-
-.armorShowImage {
-    margin-top: 50px;
-    margin-right: 150px;
-    margin-left: 150px;
-}
-
-.armorShowH2 {
-    margin-top: -20px;
-    margin-bottom: 30px;
 }
 
 
