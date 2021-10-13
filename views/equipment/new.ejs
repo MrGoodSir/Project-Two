@@ -6,39 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Create a New Equipment</title>
+    <title>Create New Equipment</title>
 </head>
 
-<nav>
+<nav class="equipmentNewHeaderButtons">
+
+    <form action="/home/equipment">
+        <input class="equipmentNewBackHeaderButton" type="submit" value="Back">
+    </form>
 
     <form action="/home">
-        <input type="submit" value="Home">
+        <input class="equipmentNewHomeHeaderButton" type="submit" value="Home">
     </form>
 
 </nav>
 
-<body>
+<body class="equipmentNewBody">
 
-    <h1>This is the new equipment page</h1>
+    <h1 class="equipmentNewH1">Create Your Equipment</h1>
 
-    <form action="/home/equipment" method="POST">
+    <form action="/home/equipment" method="post">
 
-        <input type="submit" value="Create">
-        <input type="text" name="name" placeholder="Equipment Name" required>
-        <input type="text" name="description" placeholder="Description" required>
-        <input type="text" name="price" placeholder="Price" required>
-        <input type="text" name="image" placeholder="Image">
-        <input type="text" name="quanity" placeholder="Quanity" required>
+
+        <div class="equipmentNewTopTwoInput">
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox" type="text" name="name" autocomplete="off" placeholder="Equipment Name" required>
+            </div>
+
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox" type="text" name="description" placeholder="Description" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="equipmentNewMiddleTwoInput">
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox" type="text" name="image" autocomplete="off" placeholder="Image">
+            </div>
+
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox" type="text" name="quanity" autocomplete="off" placeholder="Quanity" required>
+            </div>
+        </div>
+
+        <div class="equipmentNewBottomInput">
+            <div class="equipmentNewInputBox">
+                <input class="equipmentNewActualInputBox" type="text" name="price" placeholder="Price" autocomplete="off" required>
+            </div>
+        </div>
 
         <br>
 
 
+        <input class="equipmentNewCreateHeaderButton" type="submit" value="Create">
+
 
     </form>
 
-    <form action="/home/equipment">
-        <input type="submit" value="Back">
-    </form>
 
 </body>
 

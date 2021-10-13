@@ -9,37 +9,63 @@
     <title>Create New Armor</title>
 </head>
 
-<nav>
+<nav class="armorNewHeaderButtons">
+
+    <form action="/home/armor">
+        <input class="armorNewBackHeaderButton" type="submit" value="Back">
+    </form>
 
     <form action="/home">
-        <input type="submit" value="Home">
+        <input class="armorNewHomeHeaderButton" type="submit" value="Home">
     </form>
 
 </nav>
 
-<body>
+<body class="armorNewBody">
 
-    <h1>This is the new armor page</h1>
+    <h1 class="armorNewH1">Create Your Armor</h1>
 
     <form action="/home/armor" method="post">
 
-        <input type="submit" value="Create">
-        <input type="text" name="name" placeholder="Armor Name" required>
-        <input type="text" name="description" placeholder="Description" required>
-        <input type="text" name="weight" placeholder="Weight" required>
-        <input type="text" name="price" placeholder="Price" required>
-        <input type="text" name="image" placeholder="Image">
-        <input type="text" name="quanity" placeholder="Quanity" required>
+
+        <div class="armorNewTopTwoInput">
+            <div class="armorNewInputBox">
+                <input class="armorNewActualInputBox" type="text" name="name" autocomplete="off" placeholder="Armor Name" required>
+            </div>
+
+            <div class="armorNewInputBox">
+                <input class="armorNewActualInputBox" type="text" name="description" placeholder="Description" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="armorNewMiddleTwoInput">
+            <div class="armorNewInputBox">
+                <input class="armorNewActualInputBox" type="text" name="weight" placeholder="Weight" autocomplete="off" required>
+            </div>
+
+            <div class="armorNewInputBox">
+                <input class="armorNewActualInputBox" type="text" name="price" placeholder="Price" autocomplete="off" required>
+            </div>
+        </div>
+
+        <div class="armorNewBottomTwoInput">
+            <div class="armorNewInputBox">
+                <input class="armorNewActualInputBox" type="text" name="image" autocomplete="off" placeholder="Image">
+            </div>
+
+            <div class="armorNewInputBox">
+                <input class="armorNewActualInputBox" type="text" name="quanity" autocomplete="off" placeholder="Quanity" required>
+            </div>
+        </div>
 
         <br>
 
 
-    </form>
+        <input class="armorNewCreateHeaderButton" type="submit" value="Create">
 
 
-    <form action="/home/armor">
-        <input type="submit" value="Back">
     </form>
+
 
 </body>
 
