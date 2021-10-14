@@ -15,7 +15,7 @@
 
 <h2>Getting Started</h2>
 
-[Click Here]()  to see the application in action! 
+[Click Here](https://haloshopapp.herokuapp.com/)  to see the application in action! 
 
 <h2>Future Enhancements</h2>
 
