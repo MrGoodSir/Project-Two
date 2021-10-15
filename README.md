@@ -21,7 +21,8 @@
 
 <ul>
 <li> I want an add to cart option in the future</li>
-<li> I want only logged in users to be able to buy and add to cart (auth) <li>
+<li> I want only logged in users to be able to buy and add to cart (auth) </li>
+<li> I want to fix the colors on some of the pages, making it easier to read</li>
 </ul>
   
 <h2>Take a look!</h2>
