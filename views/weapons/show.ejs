@@ -11,78 +11,82 @@
     </title>
 </head>
 
-<div class="flexContainer">
-
-    <form action="/home/weapons">
-        <input class="weaponShowBackHeaderButton" type="submit" value="Back">
-    </form>
-
-<div class="weaponShowAllBody">
 
     <body class="weaponShowBody">
 
+        <form action="/home/weapons">
+            <input class="weaponShowBackHeaderButton" type="submit" value="Back">
+        </form>
 
-        <div class="weaponShowDivBody">
-            <img class="weaponShowImage" src="<%=weapon.image%>">
+        <div class="weaponImageAndInfo">
 
-            <h1 class="weaponShowH1">
-                <%=weapon.name %>
-            </h1>
-        </div>
+            <div class="weaponShowLeftHalf">
 
-
-        <h2 class="weaponShowH2">Information:</h2> <br>
-
-        <p>
-            <%=weapon.description%>
-        </p>
-
-        <p>
-            $
-            <%=weapon.price%>
-        </p>
-
-        <p>
-            <%=weapon.weight%> LBS
-        </p>
+                <img class="weaponShowImage" src="<%=weapon.image%>">
 
 
+            </div>
+
+            <div class="weaponShowRightHalf">
+
+                <div class="armorShowBottomRightHalf">
+
+                    <h1 class="weaponShowH1">
+                        <%=weapon.name %>
+                    </h1>
+
+                    <h2 class="weaponShowH2">Information:</h2> <br>
+
+                    <p>
+                        <%=weapon.description%>
+                    </p>
+
+                    <p>
+                        $
+                        <%=weapon.price%>
+                    </p>
+
+                    <p>
+                        <%=weapon.weight%> LBS
+                    </p>
+
+                    <p>
+                        Quanity :
+                        <%=weapon.quanity%>
+                    </p>
+
+                </div>
+
+            </div>
 
 
+            <form action="/home/weapons/<%=weapon.id%>/edit">
+                <input class="weaponShowEditButton" type="submit" value="Edit">
+            </form>
 
 
-    </body>
+            <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
 
-    <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
-
-        <% if(weapon.quanity >=1) { %>
-
-            <p>
-                Quanity :
-                <%=weapon.quanity%>
-            </p>
+            <% if(weapon.quanity >=1) { %>
 
             <form action='/home/weapons/<%=weapon._id%>/buy?_method=PUT' method='POST'>
                 <input class="weaponShowBuyButton" type='submit' value="Buy">
             </form>
 
             <% } else { %>
-                <h3 style="color: red;">OUT OF STOCK</h3>
-                <% } %>
+            <h3 style="color: red;">OUT OF STOCK</h3>
+            <% } %>
+
+        </div>
 
 
-                    <form action="/home/weapons/<%=weapon.id%>/edit">
-                        <input class="weaponShowEditButton" type="submit" value="Edit">
-                    </form>
+    </div>
+
+    <form action="/home">
+        <input class="weaponShowHomeHeaderButton" type="submit" value="Home">
+    </form>
 
 
-
-</div>
-
-<form action="/home">
-    <input class="weaponShowHomeHeaderButton" type="submit" value="Home">
-</form>
-
-</div>
+</body>
 
 </html>
