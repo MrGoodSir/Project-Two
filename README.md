@@ -13,22 +13,24 @@
 <li>Heroku</li>
 </ul>
 
-<h2>Take a look!</h2>
-
-
-![Screenshot!](Project-1-caputre.PNG)
-
-
 <h2>Getting Started</h2>
 
-[Click Here]()  to see the application in action! 
+[Click Here](https://haloshopapp.herokuapp.com/)  to see the application in action! 
 
 <h2>Future Enhancements</h2>
 
 <ul>
 <li> I want an add to cart option in the future</li>
+<li> I want only logged in users to be able to buy and add to cart (auth) </li>
+<li> I want to fix the colors on some of the pages, making it easier to read</li>
 </ul>
+  
+<h2>Take a look!</h2>
 
+
+![Screenshot!](Screenshot1.PNG)
+![Screenshot!](Screenshot2.PNG)
+![Screenshot!](Screenshot3.PNG)
 
 
 
