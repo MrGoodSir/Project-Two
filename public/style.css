@@ -3,6 +3,11 @@
 
 /*=============================================================================================*/
 
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .startBody {
     text-align: center;
     background-image: url("https://i.ytimg.com/vi/E5cHeFeNrgE/maxresdefault.jpg");
@@ -43,6 +48,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -52,6 +58,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -61,6 +68,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -70,6 +78,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -79,6 +88,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -345,38 +355,39 @@
 /*=======================================================================================================================================================*/
 
 .armorShowBody {
-    display: flex;
-    justify-content: center;
     background-image: url("https://i.pinimg.com/originals/1f/4d/01/1f4d01b259ca07e5dca4c9c048a16169.jpg");
     background-size: cover;
 }
 
+
 .armorShowImage {
-    max-height: 400px;
-    max-width: 400px;
-    padding-right: 100px;
-    padding-top: 150px;
+    max-height: 500px;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0px 50px;
+}
+
+.armorImageAndInfo {
+    margin-top: 150px;
+    padding: 20px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 620px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 15px;
 }
 
 .armorShowBottomRightHalf {
-    padding-left: -160;
-    font-size: 20px;
-    color: rgb(160, 160, 175);
+    color: rgb(212, 212, 212);
 }
 
 .armorShowRightHalf {
-    padding-right: 450px;
-    padding-left: 200px;
-    padding-top: 150px;
-}
-
-.armorShowHeaderButtons {
-    min-width: 1890px;
-    min-height: 40px;
-}
-
-.armorShowBackButton {
-    margin-right: 450px;
+    inline-size: 200px;
+    max-width: 500px;
+    font-size: 20px;
 }
 
 .armorShowBackHeaderButton {
@@ -1131,10 +1142,11 @@
     font-size: 20px;
 }
 
-.weaponShowHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+.weaponShowAllBody {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+    color: rgb(212, 212, 212);
 }
 
 .weaponShowBackHeaderButton {
@@ -1155,7 +1167,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .weaponShowBuyButton {
