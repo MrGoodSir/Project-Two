@@ -152,6 +152,11 @@
     background-size: 1920px 1000px;
 }
 
+.armorsIndexBodyDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .armorIndexDelete {
     color: black;
     background-color: red;
@@ -182,39 +187,29 @@
     font-size: 60px;
 }
 
+
+
 .armorUL {
-    margin-left: 36%;
-    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.armorLI {
+    min-width: 400px;
 }
 
 .armorIndexDeleteEdit {
     display: flex;
-    margin-left: 145px;
+    justify-content: space-evenly;
 }
 
-.armorIndexDeleteButton {
-    padding-bottom: 20px;
-    padding-right: 15px;
-}
 
 .armorIndexHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.armorIndexNew {
-    margin-right: 280px;
-}
-
-.armorIndexBack {
-    margin-right: 300px;
-}
-
-.armorIndexRefresh {
-    margin-left: 200px;
-    margin-right: 300px;
-}
 
 .armorIndexHeaderButton {
     padding: 10px 40px;
@@ -238,6 +233,7 @@
 .armorIndexImage {
     max-height: 450px;
     max-width: 450px;
+    min-height: 450px;
 }
 
 

@@ -51,15 +51,11 @@
     <h1 class="armorIndexH1">Our Armor</h1>
 
 
-    <ul class="armorUL">
-        <% armors.forEach(armor=> { %>
+    <div armorsIndexBodyDiv>
+        <ul class="armorUL">
+            <% armors.forEach(armor=> { %>
 
-
-            <li style="list-style-type: none;">
-
-
-
-
+            <li class="armorLI" style="list-style-type: none;">
 
                 <div class="armorIndexName">
                     <%= armor.name %> Armor<br>
@@ -83,22 +79,12 @@
                     </div>
                 </div>
 
-
-
             </li>
-
-            <br>
 
             <% }) %>
 
-
-
-
-
-
-
-    </ul>
-
+        </ul>
+    </div>
 </body>
 
 
