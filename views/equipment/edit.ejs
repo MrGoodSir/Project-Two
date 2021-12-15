@@ -12,11 +12,11 @@
 <nav class="equipmentEditHeaderButtons">
 
     <form action="/home/equipment">
-        <input class="equipmentEditBackHeaderButton" type="submit" value="Back">
+        <input class="equipmentEditBackHeaderButton button" type="submit" value="Back">
     </form>
 
     <form action="/home">
-        <input class="equipmentEditHomeHeaderButton" type="submit" value="Home">
+        <input class="equipmentEditHomeHeaderButton button" type="submit" value="Home">
     </form>
 
 </nav>
@@ -30,34 +30,34 @@
 
         <div class="equipmentEditTopTwoInput">
             <div class="equipmentEditInputBox">
-                <input class="equipmentEditActualInputBox" type="text" name="name" placeholder="Equipment Name" value="<%=equipment.name%>" autocomplete="off" required>
+                <input class="equipmentEditActualInputBox input" type="text" name="name" placeholder="Equipment Name" value="<%=equipment.name%>" autocomplete="off" required>
             </div>
 
             <div class="equipmentEditInputBox">
-                <input class="equipmentEditActualInputBox" type="text" name="description" placeholder="Description" value="<%=equipment.description%>" autocomplete="off" required>
+                <input class="equipmentEditActualInputBox input" type="text" name="description" placeholder="Description" value="<%=equipment.description%>" autocomplete="off" required>
             </div>
         </div>
 
         <div class="equipmentEditMiddleTwoInput">
             <div class="equipmentEditInputBox">
-                <input class="equipmentEditActualInputBox" type="text" name="image" placeholder="Image URL" value="<%=equipment.image%>" autocomplete="off">
+                <input class="equipmentEditActualInputBox input" type="text" name="image" placeholder="Image URL" value="<%=equipment.image%>" autocomplete="off">
             </div>
 
             <div class="equipmentEditInputBox">
-                <input class="equipmentEditActualInputBox" type="text" name="quanity" placeholder="Quanity" value="<%=equipment.quanity%>" autocomplete="off" required>
+                <input class="equipmentEditActualInputBox input" type="text" name="quanity" placeholder="Quanity" value="<%=equipment.quanity%>" autocomplete="off" required>
             </div>
         </div>
 
         <div class="equipmentEditBottomInput">
             <div class="equipmentEditInputBox">
-                <input class="equipmentEditActualInputBox" type="text" name="price" placeholder="Price" value="<%=equipment.price%>" autocomplete="off" required>
+                <input class="equipmentEditActualInputBox input" type="text" name="price" placeholder="Price" value="<%=equipment.price%>" autocomplete="off" required>
             </div>
         </div>
 
         <br>
 
 
-        <input class="equipmentEditCreateHeaderButton" type="submit" value="Submit Changes">
+        <input class="equipmentEditCreateHeaderButton button" type="submit" value="Submit Changes">
 
 
     </form>

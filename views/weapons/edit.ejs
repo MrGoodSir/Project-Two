@@ -12,11 +12,11 @@
 <nav class="weaponEditHeaderButtons">
 
     <form action="/home/weapons">
-        <input class="weaponEditBackHeaderButton" type="submit" value="Back">
+        <input class="weaponEditBackHeaderButton button" type="submit" value="Back">
     </form>
 
     <form action="/home">
-        <input class="weaponEditHomeHeaderButton" type="submit" value="Home">
+        <input class="weaponEditHomeHeaderButton button" type="submit" value="Home">
     </form>
 
 </nav>
@@ -30,38 +30,38 @@
 
         <div class="weaponEditTopTwoInput">
             <div class="weaponEditInputBox">
-                <input class="weaponEditActualInputBox" type="text" name="name" placeholder="Weapon Name" value="<%=weapon.name%>" autocomplete="off" required>
+                <input class="weaponEditActualInputBox input" type="text" name="name" placeholder="Weapon Name" value="<%=weapon.name%>" autocomplete="off" required>
             </div>
 
             <div class="weaponEditInputBox">
-                <input class="weaponEditActualInputBox" type="text" name="description" placeholder="Description" value="<%=weapon.description%>" autocomplete="off" required>
+                <input class="weaponEditActualInputBox input" type="text" name="description" placeholder="Description" value="<%=weapon.description%>" autocomplete="off" required>
             </div>
         </div>
 
         <div class="weaponEditMiddleTwoInput">
             <div class="weaponEditInputBox">
-                <input class="weaponEditActualInputBox" type="text" name="weight" placeholder="Weight" value="<%=weapon.weight%>" autocomplete="off" required>
+                <input class="weaponEditActualInputBox input" type="text" name="weight" placeholder="Weight" value="<%=weapon.weight%>" autocomplete="off" required>
             </div>
 
             <div class="weaponEditInputBox">
-                <input class="weaponEditActualInputBox" type="text" name="price" placeholder="Price" value="<%=weapon.price%>" autocomplete="off" required>
+                <input class="weaponEditActualInputBox input" type="text" name="price" placeholder="Price" value="<%=weapon.price%>" autocomplete="off" required>
             </div>
         </div>
 
         <div class="weaponEditBottomTwoInput">
             <div class="weaponEditInputBox">
-                <input class="weaponEditActualInputBox" type="text" name="image" placeholder="Image URL" value="<%=weapon.image%>" autocomplete="off">
+                <input class="weaponEditActualInputBox input" type="text" name="image" placeholder="Image URL" value="<%=weapon.image%>" autocomplete="off">
             </div>
 
             <div class="weaponEditInputBox">
-                <input class="weaponEditActualInputBox" type="text" name="quanity" placeholder="Quanity" value="<%=weapon.quanity%>" autocomplete="off" required>
+                <input class="weaponEditActualInputBox input" type="text" name="quanity" placeholder="Quanity" value="<%=weapon.quanity%>" autocomplete="off" required>
             </div>
         </div>
 
         <br>
 
 
-        <input class="weaponEditCreateHeaderButton" type="submit" value="Submit Changes">
+        <input class="weaponEditCreateHeaderButton button" type="submit" value="Submit Changes">
 
 
     </form>

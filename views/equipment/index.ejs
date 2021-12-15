@@ -12,29 +12,21 @@
 
 <nav class="equipmentIndexHeaderButtons">
 
-    <div class="equipmentIndexBack">
-        <form action="/home">
-            <input class="equipmentIndexHeaderButton" type="submit" value="Back">
-        </form>
-    </div>
+    <form action="/home">
+        <input class="equipmentIndexHeaderButton button" type="submit" value="Back">
+    </form>
 
-    <div class="equipmentIndexNew">
-        <form action="/home/equipment/new">
-            <input class="equipmentIndexHeaderButton" type="submit" value="Create New Equipment">
-        </form>
-    </div>
+    <form action="/home/equipment/new">
+        <input class="equipmentIndexHeaderButton button" type="submit" value="Create New Equipment">
+    </form>
 
-    <div class="equipmentIndexRefresh">
-        <form action="/home/equipment/seed">
-            <input class="equipmentIndexHeaderButton" type="submit" value="Refresh the product">
-        </form>
-    </div>
+    <form action="/home/equipment/seed">
+        <input class="equipmentIndexHeaderButton button" type="submit" value="Refresh the product">
+    </form>
 
-    <div class="equipmentIndexHome">
-        <form action="/home">
-            <input class="equipmentIndexHeaderButton" type="submit" value="Home">
-        </form>
-    </div>
+    <form action="/home">
+        <input class="equipmentIndexHeaderButton button" type="submit" value="Home">
+    </form>
 
 </nav>
 
@@ -45,47 +37,33 @@
     <ul class="equipmentUL">
         <% equipments.forEach(equipment=> { %>
 
-
-            <li>
-
-
-
-
-
-                <div class="equipmentIndexName">
-                    <%= equipment.name %> <br></div>
-                <a href="/home/equipment/<%=equipment._id%>" style="text-decoration: none; color: black;">
-                    <img class="equipmentIndexImage" src="<%= equipment.image %>"><br>
-
-                </a>
-
-                <div class="equipmentIndexDeleteEdit">
-                    <div class="equipmentIndexDeleteButton">
-                        <form action="/home/equipment/<%=equipment.id%>?_method=DELETE" method="POST">
-                            <input class="equipmentIndexDelete" type="submit" value="DELETE">
-                        </form>
+            <li class="equipmentIndexList">
+                <div class="equipmentIndexNamePicture">
+                    <div class="equipmentIndexName">
+                        <%= equipment.name %> <br>
                     </div>
 
-                    <div clas="equipmentIndexEditButton">
-                        <form action="/home/equipment/<%=equipment.id%>/edit">
-                            <input class="equipmentIndexEdit" type="submit" value="EDIT">
-                        </form>
-                    </div>
+                    <a href="/home/equipment/<%=equipment._id%>" style="text-decoration: none; color: black;">
+                        <img class="equipmentIndexImage borderImage" src="<%= equipment.image %>"><br>
+
+                    </a>
+
                 </div>
 
+                <div class="equipmentIndexDeleteEditButtons">
+                    <form action="/home/equipment/<%=equipment.id%>?_method=DELETE" method="POST">
+                        <input class="equipmentIndexDelete button" type="submit" value="DELETE">
+                    </form>
 
+                    <form action="/home/equipment/<%=equipment.id%>/edit">
+                        <input class="equipmentIndexEdit button" type="submit" value="EDIT">
+                    </form>
+
+                </div>
 
             </li>
 
-            <br>
-
             <% }) %>
-
-
-
-
-
-
 
     </ul>
 

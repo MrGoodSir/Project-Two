@@ -11,7 +11,7 @@
     </title>
 </head>
 
-<div class="flexContainer">
+<div class="flex-container">
 
     <body class="armorShowBody">
 
@@ -25,11 +25,23 @@
 
                 <img class="armorShowImage" src="<%=armor.image%>">
 
+                <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
+
+                    <% if(armor.quanity>=1) { %>
+
+                        <form action='/home/armor/<%=armor._id%>/buy?_method=PUT' method='POST'>
+                            <input class="armorShowBuyButton" type='submit' value="Buy">
+                        </form>
+
+                        <% } else { %>
+                            <h3 style="color: red;">OUT OF STOCK</h3>
+                            <% } %>
+
             </div>
 
             <div class="armorShowRightHalf">
 
-                <div class="armorShowBottomRightHalf">
+                <div class="armorShowTopRightHalf">
 
                     <h1 class="armorShowH1">
                         <%=armor.name %>
@@ -38,43 +50,35 @@
 
                     <h2 class="armorShowH2">Information:</h2> <br>
 
-                    <p>
+                    <p class="armorShowP">
                         <%=armor.description%>
                     </p>
 
-                    <p>
+                    <p class="armorShowP">
                         $
                         <%=armor.price%>
                     </p>
 
-                    <p>
+                    <p class="armorShowP">
                         <%=armor.weight%> LBS
                     </p>
 
-                    <p>
+                    <p class="armorShowP">
                         Quanity :
                         <%=armor.quanity%>
                     </p>
 
                 </div>
 
+                <div class="armorShowBottomRightHalf">
+
+                    <form action="/home/armor/<%=armor.id%>/edit">
+                        <input class="armorShowEditButton" type="submit" value="Edit">
+                    </form>
+
+                </div>
+
             </div>
-
-            <form action="/home/armor/<%=armor.id%>/edit">
-                <input class="armorShowEditButton" type="submit" value="Edit">
-            </form>
-
-            <% // If statement deciding one whether there is a quanity and a buy button, or its out of stock %>
-
-            <% if(armor.quanity >=1) { %>
-
-            <form action='/home/armor/<%=armor._id%>/buy?_method=PUT' method='POST'>
-                <input class="armorShowBuyButton" type='submit' value="Buy">
-            </form>
-
-            <% } else { %>
-            <h3 style="color: red;">OUT OF STOCK</h3>
-            <% } %>
 
         </div>
 
@@ -82,8 +86,8 @@
             <input class="armorShowHomeHeaderButton" type="submit" value="Home">
         </form>
 
-</body>
- 
+    </body>
+
 
 </div>
 

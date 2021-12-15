@@ -16,7 +16,7 @@
     <div class="armorIndexActualHeaderButtons">
         <div class="armorIndexBack">
             <form action="/home">
-                <input class="armorIndexHeaderButton" type="submit" value="Back">
+                <input class="armorIndexHeaderButton button" type="submit" value="Back">
             </form>
         </div>
     </div>
@@ -24,7 +24,7 @@
     <div class="armorIndexActualHeaderButtons">
         <div class="armorIndexNew">
             <form action="/home/armor/new">
-                <input class="armorIndexHeaderButton" type="submit" value="Create New Armor">
+                <input class="armorIndexHeaderButton button" type="submit" value="Create New Armor">
             </form>
         </div>
     </div>
@@ -32,7 +32,7 @@
     <div class="armorIndexActualHeaderButtons">
         <div class="armorIndexRefresh">
             <form action="/home/armor/seed">
-                <input class="armorIndexHeaderButton" type="submit" value="Refresh the product">
+                <input class="armorIndexHeaderButton button" type="submit" value="Refresh the product">
             </form>
         </div>
     </div>
@@ -40,7 +40,7 @@
     <div class="armorIndexActualHeaderButtons">
         <div class="armorIndexHome">
             <form action="/home">
-                <input class="armorIndexHeaderButton" type="submit" value="Home">
+                <input class="armorIndexHeaderButton button" type="submit" value="Home">
             </form>
         </div>
     </div>
@@ -61,20 +61,20 @@
                     <%= armor.name %> Armor<br>
                 </div>
                 <a href="/home/armor/<%=armor._id%>" style="text-decoration: none; color: black;">
-                    <img class="armorIndexImage" src="<%= armor.image %>">
+                    <img class="armorIndexImage image" src="<%= armor.image %>">
 
                 </a>
 
                 <div class="armorIndexDeleteEdit">
                     <div class="armorIndexDeleteButton">
                         <form action="/home/armor/<%=armor.id%>?_method=DELETE" method="POST">
-                            <input class="armorIndexDelete" type="submit" value="DELETE">
+                            <input class="armorIndexDelete button" type="submit" value="DELETE">
                         </form>
                     </div>
 
                     <div clas="armorIndexEditButton">
                         <form action="/home/armor/<%=armor.id%>/edit">
-                            <input class="armorIndexEdit" type="submit" value="EDIT">
+                            <input class="armorIndexEdit button" type="submit" value="EDIT">
                         </form>
                     </div>
                 </div>

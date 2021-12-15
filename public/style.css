@@ -1,3 +1,29 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.input:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.borderImage:hover {
+    border: 5px solid rgb(104, 104, 126);
+    border-radius: 15px;
+}
+
+.image:hover {
+    background-color: rgb(104, 104, 126, .3);
+    border-radius: 15px;
+}
+
+
 /* Start Page CSS */
 
 
@@ -7,6 +33,9 @@
     text-align: center;
     background-image: url("https://i.ytimg.com/vi/E5cHeFeNrgE/maxresdefault.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .startH1 {
@@ -25,10 +54,6 @@
     background-image: url("https://c4.wallpaperflare.com/wallpaper/137/750/520/halo-dark-science-fiction-halo-infinite-video-games-hd-wallpaper-preview.jpg");
     border-radius: 15px;
     border: 5px solid black;
-}
-
-.startButton:hover {
-    border: 5px solid rgb(104, 104, 126)
 }
 
 .startAll {
@@ -100,6 +125,9 @@
     text-align: center;
     background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .homeH1 {
@@ -127,10 +155,6 @@
     padding: 10px;
 }
 
-.homeButton:hover {
-    border: 5px solid rgb(104, 104, 126)
-}
-
 
 /* =================    ARMOR    ================= */
 
@@ -149,7 +173,10 @@
 .armorsIndexBody {
     text-align: center;
     background-image: url("https://content.halocdn.com/media/Default/BlogPost/noblehelmetgraphic-body-71afcdcd9d3f4be4aab75ca236586816.jpg");
-    background-size: 1920px 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .armorsIndexBodyDiv {
@@ -172,16 +199,6 @@
     border-radius: 10px;
 }
 
-.armorIndexEdit:hover {
-    border: 5px solid rgb(104, 104, 126);
-    max-width: 150px;
-}
-
-.armorIndexDelete:hover {
-    border: 5px solid rgb(104, 104, 126);
-    max-width: 150px;
-}
-
 .armorIndexH1 {
     color: rgb(104, 104, 126);
     font-size: 60px;
@@ -192,7 +209,8 @@
 .armorUL {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 .armorLI {
@@ -219,16 +237,7 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-}
-
-.armorIndexHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-}
-
-.armorIndexImage:hover {
-    background-color: rgba(39, 39, 48, 0.589);
-    border-radius: 15px;
-}
+} 
 
 .armorIndexImage {
     max-height: 450px;
@@ -245,6 +254,9 @@
 .armorNewBody {
     background-image: url("https://www.343industries.org/forum/uploads/gallery/album_210/large.gallery_20452_210_128356.jpg.46f369bccba575a21601ef795a36de6e.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -285,37 +297,12 @@
     border: 5px solid black;
 }
 
-.armorNewBackHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.armorNewHomeHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.armorNewCreateHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.armorNewHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
 .armorNewActualInputBox {
     border: 5px solid black;
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px
-}
-
-.armorNewActualInputBox:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
 }
 
 .armorNewH1 {
@@ -345,14 +332,12 @@
 
 /*=======================================================================================================================================================*/
 
-.flexContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
 .armorShowBody {
     background-image: url("https://i.pinimg.com/originals/1f/4d/01/1f4d01b259ca07e5dca4c9c048a16169.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -367,22 +352,33 @@
     margin-top: 150px;
     padding: 20px 150px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-content: center;
-    max-width: 620px;
-    flex-wrap: wrap;
-    align-items: center;
     border-radius: 15px;
 }
 
-.armorShowBottomRightHalf {
+.armorShowTopRightHalf {
     color: rgb(212, 212, 212);
 }
 
+.armorShowP {
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+
 .armorShowRightHalf {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
     font-size: 20px;
+}
+
+.armorShowLeftHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
 }
 
 .armorShowBackHeaderButton {
@@ -435,6 +431,9 @@
 .armorEditBody {
     background-image: url("https://c4.wallpaperflare.com/wallpaper/696/95/694/halo-black-master-chief-video-game-wallpaper-preview.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -475,37 +474,12 @@
     border: 5px solid black;
 }
 
-.armorEditBackHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.armorEditHomeHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.armorEditCreateHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.armorEditHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
 .armorEditActualInputBox {
     border: 5px solid black;
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px
-}
-
-.armorEditActualInputBox:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
 }
 
 .armorEditH1 {
@@ -547,7 +521,10 @@
 .equipmentIndexBody {
     text-align: center;
     background-image: url("https://i.pinimg.com/originals/20/67/ff/2067ff18c3b7c88224f682518058d669.jpg");
-    background-size: 1890px 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .equipmentIndexDelete {
@@ -565,14 +542,18 @@
     border-radius: 10px;
 }
 
-.equipmentIndexEdit:hover {
-    border: 5px solid rgb(104, 104, 126);
-    max-width: 150px;
+.equipmentIndexList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 450px;
 }
 
-.equipmentIndexDelete:hover {
-    border: 5px solid rgb(104, 104, 126);
-    max-width: 150px;
+.equipmentIndexDeleteEditButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .equipmentIndexH1 {
@@ -582,37 +563,14 @@
 }
 
 .equipmentUL {
-    margin-left: 36%;
-    max-width: 450px;
-}
-
-.equipmentIndexDeleteEdit {
-    display: flex;
-    margin-left: 145px;
-}
-
-.equipmentIndexDeleteButton {
-    padding-bottom: 20px;
-    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 60px;
 }
 
 .equipmentIndexHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
-}
-
-.equipmentIndexNew {
-    margin-right: 245px;
-}
-
-.equipmentIndexBack {
-    margin-right: 300px;
-}
-
-.equipmentIndexRefresh {
-    margin-left: 200px;
-    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .equipmentIndexHeaderButton {
@@ -625,20 +583,11 @@
     border: 5px solid black;
 }
 
-.equipmentIndexHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-}
-
-.equipmentIndexImage:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 5px;
-}
-
 .equipmentIndexImage {
-    max-height: 450px;
-    max-width: 450px;
-    min-width: 400px;
-    min-height: 250px;
+    max-height: 350px;
+    max-width: 350px;
+    min-height: 280px;
+    min-width: 280px;
 }
 
 
@@ -650,6 +599,9 @@
 .equipmentNewBody {
     background-image: url("https://wallpaperaccess.com/full/3369502.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -690,37 +642,12 @@
     border: 5px solid black;
 }
 
-.equipmentNewBackHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.equipmentNewHomeHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.equipmentNewCreateHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.equipmentNewHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
 .equipmentNewActualInputBox {
     border: 5px solid black;
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px
-}
-
-.equipmentNewActualInputBox:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
 }
 
 .equipmentNewH1 {
@@ -751,17 +678,28 @@
 /*=======================================================================================================================================================*/
 
 .equipmentShowBody {
-    color: rgb(148, 148, 150);
+    color: rgb(136, 136, 136);
     background-image: url("https://images.alphacoders.com/539/thumb-1920-53963.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
     font-size: 25px;
-    background-size: 1920px 980px;
 }
 
+.equipmentShowContainer {
+    color: rgb(212, 212, 212);
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
 .equipmentShowHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .equipmentShowBackHeaderButton {
@@ -782,7 +720,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .equipmentShowBuyButton {
@@ -807,10 +744,10 @@
 }
 
 .equipmentShowImage {
-    max-height: 200px;
-    max-width: 200px;
-    min-width: 100px;
-    min-height: 100px;
+    max-height: 500px;
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 300px;
 }
 
 
@@ -822,6 +759,9 @@
 .equipmentEditBody {
     background-image: url("https://i.pinimg.com/originals/22/1b/bb/221bbb81f21919c5d9ecb2d4604c9bdf.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -862,37 +802,12 @@
     border: 5px solid black;
 }
 
-.equipmentEditBackHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.equipmentEditHomeHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.equipmentEditCreateHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.equipmentEditHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
 .equipmentEditActualInputBox {
     border: 5px solid black;
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px
-}
-
-.equipmentEditActualInputBox:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
 }
 
 .equipmentEditH1 {
@@ -934,7 +849,10 @@
 .weaponIndexBody {
     text-align: center;
     background-image: url("https://wallpaperaccess.com/full/3369435.jpg");
-    background-size: 1890px 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .weaponIndexDelete {
@@ -950,16 +868,6 @@
     background-color: rgb(63, 224, 63);
     border: 5px solid rgb(63, 224, 63);
     border-radius: 10px;
-}
-
-.weaponIndexEdit:hover {
-    border: 5px solid rgb(104, 104, 126);
-    max-width: 150px;
-}
-
-.weaponIndexDelete:hover {
-    border: 5px solid rgb(104, 104, 126);
-    max-width: 150px;
 }
 
 .weaponIndexH1 {
@@ -1011,15 +919,6 @@
     border: 5px solid black;
 }
 
-.weaponIndexHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-}
-
-.weaponIndexImage:hover {
-    background-color: rgba(39, 39, 48, 0.589);
-    border-radius: 5px;
-}
-
 
 /* Weapons New Page */
 
@@ -1027,8 +926,11 @@
 /*=======================================================================================================================================================*/
 
 .weaponNewBody {
-    background-image: url("http://t.wallpaperweb.org/wallpaper/games/1920x1080/Halo_Reach_4.jpg");
+    background-image: url("https://i.redd.it/5irqbsv51ri41.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -1069,37 +971,12 @@
     border: 5px solid black;
 }
 
-.weaponNewBackHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.weaponNewHomeHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.weaponNewCreateHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.weaponNewHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
 .weaponNewActualInputBox {
     border: 5px solid black;
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px
-}
-
-.weaponNewActualInputBox:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
 }
 
 .weaponNewH1 {
@@ -1137,6 +1014,9 @@
     color: rgb(148, 148, 150);
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Free-Halo-Background.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .weaponShowImage {
@@ -1218,6 +1098,9 @@
 .weaponEditBody {
     background-image: url("https://www.teahub.io/photos/full/97-972792_wallpaper-halo-wars-video-games.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -1258,37 +1141,12 @@
     border: 5px solid black;
 }
 
-.weaponEditBackHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.weaponEditHomeHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.weaponEditCreateHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
-.weaponEditHeaderButton:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
-}
-
 .weaponEditActualInputBox {
     border: 5px solid black;
     background-color: white;
     border-radius: 10px;
     font-size: 20px;
     margin: 5px
-}
-
-.weaponEditActualInputBox:hover {
-    border: 5px solid rgb(104, 104, 126);
-    border-radius: 15px;
 }
 
 .weaponEditH1 {

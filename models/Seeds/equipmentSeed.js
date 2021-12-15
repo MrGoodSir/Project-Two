@@ -47,7 +47,7 @@ module.exports = [{
         name: "Sprint",
         description: "Gives you extra sprint speed",
         price: 250,
-        image: "https://attackofthefanboy.com/wp-content/uploads/2019/12/Halo-Reach-How-to-Sprint.jpg",
+        image: "https://preview.redd.it/0xl03vihr8461.jpg?auto=webp&s=7d07b00a5107a62ed93c5aff9b3b9fa2b23e6b54",
         quanity: 20
 
     }

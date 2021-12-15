@@ -12,9 +12,6 @@ const weaponSeed = require('./models/Seeds/weaponSeed')
 const methodOverride = require("method-override")
 require('dotenv').config()
 
-
-
-
 const DATABASE_URL = process.env.DATABASE_URL
 mongoose.connect(DATABASE_URL)
 const db = mongoose.connection
