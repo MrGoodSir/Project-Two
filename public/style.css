@@ -261,9 +261,8 @@
 }
 
 .armorNewHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .armorNewBackHeaderButton {
@@ -284,7 +283,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .armorNewCreateHeaderButton {
@@ -389,7 +387,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-right: 50%px;
 }
 
 .armorShowHomeHeaderButton {
@@ -438,9 +435,8 @@
 }
 
 .armorEditHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .armorEditBackHeaderButton {
@@ -461,7 +457,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .armorEditCreateHeaderButton {
@@ -563,9 +558,9 @@
 }
 
 .equipmentUL {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .equipmentIndexHeaderButtons {
@@ -606,9 +601,8 @@
 }
 
 .equipmentNewHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .equipmentNewBackHeaderButton {
@@ -629,7 +623,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .equipmentNewCreateHeaderButton {
@@ -686,6 +679,18 @@
     background-attachment: fixed;
     text-align: center;
     font-size: 25px;
+}
+
+.equipmentShowLeftHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.equipmentShowRightHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .equipmentShowContainer {
@@ -766,9 +771,8 @@
 }
 
 .equipmentEditHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .equipmentEditBackHeaderButton {
@@ -789,7 +793,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .equipmentEditCreateHeaderButton {
@@ -877,13 +880,29 @@
 }
 
 .weaponUL {
-    margin-left: 36%;
-    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2.5%;
+}
+
+.weaponIndexImage {
+    max-height: 400;
+    max-width: 400;
+}
+
+.weaponIndexList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    max-height: 700px;
+    max-width: 700px;
 }
 
 .weaponIndexDeleteEdit {
     display: flex;
-    margin-left: 145px;
+    justify-content: space-around;
 }
 
 .weaponIndexDeleteButton {
@@ -892,22 +911,8 @@
 }
 
 .weaponIndexHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
-}
-
-.weaponIndexNew {
-    margin-right: 245px;
-}
-
-.weaponIndexBack {
-    margin-right: 300px;
-}
-
-.weaponIndexRefresh {
-    margin-left: 200px;
-    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .weaponIndexHeaderButton {
@@ -918,6 +923,7 @@
     border-radius: 15px;
     border: 5px solid black;
 }
+
 
 
 /* Weapons New Page */
@@ -935,9 +941,8 @@
 }
 
 .weaponNewHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .weaponNewBackHeaderButton {
@@ -958,7 +963,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .weaponNewCreateHeaderButton {
@@ -1105,9 +1109,8 @@
 }
 
 .weaponEditHeaderButtons {
-    display: inline-flex;
-    min-width: 1890px;
-    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .weaponEditBackHeaderButton {
@@ -1128,7 +1131,6 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
-    margin-left: 1620px;
 }
 
 .weaponEditCreateHeaderButton {

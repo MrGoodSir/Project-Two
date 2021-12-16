@@ -47,34 +47,46 @@
         <% weapons.forEach(weapon=> { %>
 
 
-            <li style="list-style-type: none;">
+            <li class="weaponIndexList" style="list-style-type: none;">
 
 
+                <div class="weaponIndexTop">
 
-
-
-                <div class="weaponIndexName">
-                    <%= weapon.name %><br>
-                </div>
-                <a href="/home/weapons/<%=weapon._id%>" style="text-decoration: none; color: black;">
-                    <div class="weaponIndexImage image"><img src="<%= weapon.image %>" style="max-height: 450px; max-width: 450px;"></div><br>
-
-                </a>
-
-                <div class="weaponIndexDeleteEdit">
-                    <div class="weaponIndexDeleteButton">
-                        <form action="/home/weapons/<%=weapon.id%>?_method=DELETE" method="POST">
-                            <input class="weaponIndexDelete button" type="submit" value="DELETE">
-                        </form>
+                    <div class="weaponIndexName">
+                        <%= weapon.name %><br>
                     </div>
 
-                    <div clas="weaponIndexEditButton">
-                        <form action="/home/weapons/<%=weapon.id%>/edit">
-                            <input class="weaponIndexEdit button" type="submit" value="EDIT">
-                        </form>
-                    </div>
                 </div>
 
+
+                <div class="weaponIndexMiddle">
+                    <a href="/home/weapons/<%=weapon._id%>" style="text-decoration: none; color: black;">
+                        <div class="weaponIndexImage image"><img class="weaponIndexImage" src="<%= weapon.image %>"
+                                style="max-height: 450px; max-width: 450px;">
+                        </div>
+                        <br>
+                    </a>
+
+                </div>
+
+
+                <div class="weaponIndexBottom">
+
+                    <div class="weaponIndexDeleteEdit">
+                        <div class="weaponIndexDeleteButton">
+                            <form action="/home/weapons/<%=weapon.id%>?_method=DELETE" method="POST">
+                                <input class="weaponIndexDelete button" type="submit" value="DELETE">
+                            </form>
+                        </div>
+
+                        <div clas="weaponIndexEditButton">
+                            <form action="/home/weapons/<%=weapon.id%>/edit">
+                                <input class="weaponIndexEdit button" type="submit" value="EDIT">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
 
 
             </li>

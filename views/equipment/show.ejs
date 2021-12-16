@@ -27,44 +27,52 @@
 
                 <img class="equipmentShowImage" src="<%=equipment.image%>" style="max-height: 400px; max-width: 400px;">
 
-                <% if(equipment.quanity>=1) { %>
 
-                    <p>
-                        Quanity :
-                        <%=equipment.quanity%>
-                    </p>
-
-                    <form action='/home/equipment/<%=equipment._id%>/buy?_method=PUT' method='POST'>
-                        <input class="equipmentShowBuyButton button" type='submit' value="Buy">
-                    </form>
-
-                    <% } else { %>
-                        <h3 style="color: red;">OUT OF STOCK</h3>
-                        <% } %>
+                <form action="/home/equipment/<%=equipment.id%>/edit">
+                    <input class="equipmentShowEditButton button" type="submit" value="Edit">
+                </form>
 
             </div>
 
 
             <div class="equipmentShowRightHalf">
 
+                <div class="equipmentShowRightHalfTopHalf">
 
-                <h1 class="equipmentShowH1">
-                    <%=equipment.name %>
-                </h1>
-                <h2 class="equipmentShowH2">Information:</h2> <br>
+                    <h1 class="equipmentShowH1">
+                        <%=equipment.name %>
+                    </h1>
+                    <h2 class="equipmentShowH2">Information:</h2> <br>
 
-                <p>
-                    <%=equipment.description%>
-                </p>
+                    <p>
+                        <%=equipment.description%>
+                    </p>
 
-                <p>
-                    $
-                    <%=equipment.price%>
-                </p>
+                    <p>
+                        $
+                        <%=equipment.price%>
+                    </p>
 
-                <form action="/home/equipment/<%=equipment.id%>/edit">
-                    <input class="equipmentShowEditButton button" type="submit" value="Edit">
-                </form>
+                </div>
+
+                <div class="equipmentShowRightHalfBottomHalf">
+
+                    <% if(equipment.quanity>=1) { %>
+
+                        <p>
+                            Quanity :
+                            <%=equipment.quanity%>
+                        </p>
+
+                        <form action='/home/equipment/<%=equipment._id%>/buy?_method=PUT' method='POST'>
+                            <input class="equipmentShowBuyButton button" type='submit' value="Buy">
+                        </form>
+
+                        <% } else { %>
+                            <h3 style="color: red;">OUT OF STOCK</h3>
+                            <% } %>
+
+                </div>
 
             </div>
 
