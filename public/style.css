@@ -23,6 +23,44 @@
     border-radius: 15px;
 }
 
+.headerButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: rgb(7, 25, 26);
+    color: black;
+    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
+    border-radius: 15px;
+    border: 5px solid black;
+    transition: .2s ease-in-out;
+}
+
+.headerButton:hover {
+    box-shadow: 0px 5px 15px rgb(59, 59, 59);
+}
+
+.editButton:hover{
+    box-shadow: 0px 0px 0px 2px rgb(0, 255, 0);
+}
+
+.deleteButton:hover{
+    box-shadow: 0px 0px 0px 2px rgb(255, 0, 0);
+}
+
+.indexEditButton {
+    color: black;
+    padding: 0px 17px;
+    background-color: rgb(0, 255, 0);
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 10px;
+}
+
+.indexDeleteButton {
+    color: black;
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
 
 /* Start Page CSS */
 
@@ -54,6 +92,11 @@
     background-image: url("https://c4.wallpaperflare.com/wallpaper/137/750/520/halo-dark-science-fiction-halo-infinite-video-games-hd-wallpaper-preview.jpg");
     border-radius: 15px;
     border: 5px solid black;
+    transition: .1s ease-in-out;
+}
+
+.startButton:hover {
+    box-shadow: 0px 0px 25px rgb(192, 192, 192);
 }
 
 .startAll {
@@ -148,6 +191,11 @@
     background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
     border-radius: 15px;
     border: 5px solid black;
+    transition: .2s ease-in-out;
+}
+
+.homeButton:hover {
+    box-shadow: 0px 5px 15px rgb(59, 59, 59);
 }
 
 .homeInputDiv {
@@ -191,14 +239,6 @@
     border-radius: 10px;
 }
 
-.armorIndexEdit {
-    color: black;
-    padding: 0px 17px;
-    background-color: rgb(63, 224, 63);
-    border: 5px solid rgb(63, 224, 63);
-    border-radius: 10px;
-}
-
 .armorIndexH1 {
     color: rgb(104, 104, 126);
     font-size: 60px;
@@ -228,17 +268,6 @@
     justify-content: space-between;
 }
 
-
-.armorIndexHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-} 
-
 .armorIndexImage {
     max-height: 450px;
     max-width: 450px;
@@ -263,36 +292,6 @@
 .armorNewHeaderButtons {
     display: flex;
     justify-content: space-between;
-}
-
-.armorNewBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorNewHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorNewCreateHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
 }
 
 .armorNewActualInputBox {
@@ -379,46 +378,6 @@
     gap: 20px;
 }
 
-.armorShowBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorShowHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorShowBuyButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorShowEditButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
 
 /* Armors Edit Page */
 
@@ -437,36 +396,6 @@
 .armorEditHeaderButtons {
     display: flex;
     justify-content: space-between;
-}
-
-.armorEditBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorEditHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.armorEditCreateHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
 }
 
 .armorEditActualInputBox {
@@ -522,21 +451,6 @@
     background-attachment: fixed;
 }
 
-.equipmentIndexDelete {
-    color: black;
-    background-color: red;
-    border: 5px solid red;
-    border-radius: 10px;
-}
-
-.equipmentIndexEdit {
-    color: black;
-    padding: 0px 17px;
-    background-color: rgb(63, 224, 63);
-    border: 5px solid rgb(63, 224, 63);
-    border-radius: 10px;
-}
-
 .equipmentIndexList {
     display: flex;
     flex-direction: column;
@@ -568,16 +482,6 @@
     justify-content: space-between;
 }
 
-.equipmentIndexHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
 .equipmentIndexImage {
     max-height: 350px;
     max-width: 350px;
@@ -603,36 +507,6 @@
 .equipmentNewHeaderButtons {
     display: flex;
     justify-content: space-between;
-}
-
-.equipmentNewBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentNewHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentNewCreateHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
 }
 
 .equipmentNewActualInputBox {
@@ -707,47 +581,6 @@
     justify-content: space-between;
 }
 
-.equipmentShowBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentShowHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentShowBuyButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentShowEditButton {
-    margin-top: 20px;
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
 .equipmentShowImage {
     max-height: 500px;
     max-width: 500px;
@@ -773,36 +606,6 @@
 .equipmentEditHeaderButtons {
     display: flex;
     justify-content: space-between;
-}
-
-.equipmentEditBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentEditHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.equipmentEditCreateHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
 }
 
 .equipmentEditActualInputBox {
@@ -858,21 +661,6 @@
     background-attachment: fixed;
 }
 
-.weaponIndexDelete {
-    color: rgb(0, 0, 0);
-    background-color: red;
-    border: 5px solid red;
-    border-radius: 10px;
-}
-
-.weaponIndexEdit {
-    color: rgb(0, 0, 0);
-    padding: 0px 17px;
-    background-color: rgb(63, 224, 63);
-    border: 5px solid rgb(63, 224, 63);
-    border-radius: 10px;
-}
-
 .weaponIndexH1 {
     color: rgb(104, 104, 126);
     font-size: 60px;
@@ -915,16 +703,6 @@
     justify-content: space-between;
 }
 
-.weaponIndexHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-
 
 /* Weapons New Page */
 
@@ -943,36 +721,6 @@
 .weaponNewHeaderButtons {
     display: flex;
     justify-content: space-between;
-}
-
-.weaponNewBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponNewHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponNewCreateHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
 }
 
 .weaponNewActualInputBox {
@@ -1050,49 +798,6 @@
     font-size: 20px;
 }
 
-.weaponShowBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponShowHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponShowBuyButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponShowEditButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-
-
-
 
 /* Weapons Edit Page */
 
@@ -1111,36 +816,6 @@
 .weaponEditHeaderButtons {
     display: flex;
     justify-content: space-between;
-}
-
-.weaponEditBackHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponEditHomeHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
-}
-
-.weaponEditCreateHeaderButton {
-    padding: 10px 40px;
-    font-size: 20px;
-    background-color: rgb(7, 25, 26);
-    color: black;
-    background-image: url("https://i.pinimg.com/originals/79/0d/77/790d7774cdc98b6a53170ef5de8ce565.jpg");
-    border-radius: 15px;
-    border: 5px solid black;
 }
 
 .weaponEditActualInputBox {

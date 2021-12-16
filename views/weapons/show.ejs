@@ -15,7 +15,7 @@
     <body class="weaponShowBody">
 
         <form action="/home/weapons">
-            <input class="weaponShowBackHeaderButton button" type="submit" value="Back">
+            <input class="headerButton button" type="submit" value="Back">
         </form>
 
         <div class="weaponImageAndInfo">
@@ -61,7 +61,7 @@
 
 
             <form action="/home/weapons/<%=weapon.id%>/edit">
-                <input class="weaponShowEditButton button" type="submit" value="Edit">
+                <input class="headerButton button" type="submit" value="Edit">
             </form>
 
 
@@ -70,7 +70,7 @@
             <% if(weapon.quanity >=1) { %>
 
             <form action='/home/weapons/<%=weapon._id%>/buy?_method=PUT' method='POST'>
-                <input class="weaponShowBuyButton button" type='submit' value="Buy">
+                <input class="headerButton button" type='submit' value="Buy">
             </form>
 
             <% } else { %>
@@ -83,7 +83,7 @@
     </div>
 
     <form action="/home">
-        <input class="weaponShowHomeHeaderButton button" type="submit" value="Home">
+        <input class="headerButton button" type="submit" value="Home">
     </form>
 
 

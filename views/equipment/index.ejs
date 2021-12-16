@@ -13,19 +13,19 @@
 <nav class="equipmentIndexHeaderButtons">
 
     <form action="/home">
-        <input class="equipmentIndexHeaderButton button" type="submit" value="Back">
+        <input class="headerButton button" type="submit" value="Back">
     </form>
 
     <form action="/home/equipment/new">
-        <input class="equipmentIndexHeaderButton button" type="submit" value="Create New Equipment">
+        <input class="headerButton button" type="submit" value="Create New Equipment">
     </form>
 
     <form action="/home/equipment/seed">
-        <input class="equipmentIndexHeaderButton button" type="submit" value="Refresh the product">
+        <input class="headerButton button" type="submit" value="Refresh the product">
     </form>
 
     <form action="/home">
-        <input class="equipmentIndexHeaderButton button" type="submit" value="Home">
+        <input class="headerButton button" type="submit" value="Home">
     </form>
 
 </nav>
@@ -52,11 +52,11 @@
 
                 <div class="equipmentIndexDeleteEditButtons">
                     <form action="/home/equipment/<%=equipment.id%>?_method=DELETE" method="POST">
-                        <input class="equipmentIndexDelete button" type="submit" value="DELETE">
+                        <input class="indexDeleteButton deleteButton" type="submit" value="DELETE">
                     </form>
 
                     <form action="/home/equipment/<%=equipment.id%>/edit">
-                        <input class="equipmentIndexEdit button" type="submit" value="EDIT">
+                        <input class="indexEditButton editButton" type="submit" value="EDIT">
                     </form>
 
                 </div>

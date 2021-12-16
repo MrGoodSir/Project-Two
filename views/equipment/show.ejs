@@ -14,7 +14,7 @@
 <div class="flex-container">
 
     <form action="/home/equipment">
-        <input class="equipmentShowBackHeaderButton button" type="submit" value="Back">
+        <input class="headerButton button" type="submit" value="Back">
     </form>
 
 
@@ -29,7 +29,7 @@
 
 
                 <form action="/home/equipment/<%=equipment.id%>/edit">
-                    <input class="equipmentShowEditButton button" type="submit" value="Edit">
+                    <input class="headerButton button" type="submit" value="Edit">
                 </form>
 
             </div>
@@ -65,7 +65,7 @@
                         </p>
 
                         <form action='/home/equipment/<%=equipment._id%>/buy?_method=PUT' method='POST'>
-                            <input class="equipmentShowBuyButton button" type='submit' value="Buy">
+                            <input class="headerButton button" type='submit' value="Buy">
                         </form>
 
                         <% } else { %>
@@ -83,7 +83,7 @@
     </body>
 
     <form action="/home">
-        <input class="equipmentShowHomeHeaderButton button" type="submit" value="Home">
+        <input class="headerButton button" type="submit" value="Home">
     </form>
 
 </div>

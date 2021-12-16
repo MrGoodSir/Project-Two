@@ -16,7 +16,7 @@
     <body class="armorShowBody">
 
         <form action="/home/armor">
-            <input class="armorShowBackHeaderButton" type="submit" value="Back">
+            <input class="headerButton button" type="submit" value="Back">
         </form>
 
         <div class="armorImageAndInfo">
@@ -30,7 +30,7 @@
                     <% if(armor.quanity>=1) { %>
 
                         <form action='/home/armor/<%=armor._id%>/buy?_method=PUT' method='POST'>
-                            <input class="armorShowBuyButton" type='submit' value="Buy">
+                            <input class="headerButton button" type='submit' value="Buy">
                         </form>
 
                         <% } else { %>
@@ -73,7 +73,7 @@
                 <div class="armorShowBottomRightHalf">
 
                     <form action="/home/armor/<%=armor.id%>/edit">
-                        <input class="armorShowEditButton" type="submit" value="Edit">
+                        <input class="headerButton button" type="submit" value="Edit">
                     </form>
 
                 </div>
@@ -83,7 +83,7 @@
         </div>
 
         <form action="/home">
-            <input class="armorShowHomeHeaderButton" type="submit" value="Home">
+            <input class="headerButton button" type="submit" value="Home">
         </form>
 
     </body>
